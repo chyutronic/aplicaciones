@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <br>
+        <div align="center"><img src="img/logoSanPedro.png" width="350" /></div>
+        <br>
+    </header>
+    <div class="titulo">
+        <hi>ENCUESTA SOBRE VINOS</hi>
+    </div>
+    <div class="container">
+        <section id="p0">
+            <h3>1.- ¿Qué tipo de vino te gusta?</h3>
+            <label>
+                <input id="p0.1" type="radio" value="1" name="p0" onclick="respuesta(0, this); document.getElementById('p0.2').disabled=true; document.getElementById('p0.3').disabled=true"> Cabernet
+            </label>
+            <label>
+                <input id="p0.2" type="radio" value="2" name="p0" onclick="respuesta(0, this); document.getElementById('p0.1').disabled=true; document.getElementById('p0.3').disabled=true"> Malbec
+            </label>
+            <label>
+                <input id="p0.3" type="radio" value="3" name="p0" onclick="respuesta(0, this); document.getElementById('p0.1').disabled=true; document.getElementById('p0.2').disabled=true"> Syrah
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2.- ¿Con qué comida te gusta tomarlo?</h3>
+            <label>
+                <input id="p1.1" type="radio" value="1" name="p1" onclick="respuesta(1, this); document.getElementById('p1.2').disabled=true; document.getElementById('p1.3').disabled=true"> Carne
+            </label>
+            <label>
+                <input id="p1.2" type="radio" value="2" name="p1" onclick="respuesta(1, this); document.getElementById('p1.1').disabled=true; document.getElementById('p1.3').disabled=true"> Pollo
+            </label>
+            <label>
+                <input id="p1.3" type="radio" value="3" name="p1" onclick="respuesta(1, this); document.getElementById('p1.1').disabled=true; document.getElementById('p1.2').disabled=true"> Pescados y Mariscos
+            </label>
+        </section>
+        <section id="p2">
+            <h3>3.- ¿En qué comida del día?</h3>
+            <label>
+                <input id="p2.1" type="radio" value="1" name="p2" onclick="respuesta(2, this); document.getElementById('p2.2').disabled=true; document.getElementById('p2.3').disabled=true"> Almuerzo
+            </label>
+            <label>
+                <input id="p2.2" type="radio" value="2" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.3').disabled=true"> Cena
+            </label>
+            <label>
+                <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true"> Otro
+            </label>
+        </section>
+        <br>
+        <button onclick="consultar()">CONSULTAR</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
