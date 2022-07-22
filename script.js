@@ -10,12 +10,12 @@ let op5 = ["3", "2", "1"];
 let opcionElegida = [];
 
 
-// función que toma el número de pregunta y el imput elegido para esa pregunta
+// función que toma el número de pregunta y el imput elegido de esa pregunta
 function respuesta(numPregunta, seleccionada){
 
     opcionElegida.splice(numPregunta,0,seleccionada.value);
 
-}// fin método respuesta0
+}// fin método respuesta
 
 
 // función que toma las respuestas y lo compara con los arreglos con combinaciones posibles y entrega el vino correcto
@@ -43,6 +43,7 @@ function consultar(){
     // console.log(opcionElegida);
 
     location.reload();
+    window.scrollTo(0, 0);
 
 }// fin método consultar
 

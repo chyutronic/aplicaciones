@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GATONEGRO</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <br>
-        <div align="center"><img src="img/logoSanPedro.png" width="350" /></div>
-        <br>
-    </header>
-    <div class="titulo">
+    
+    <!--pepe <div class="titulo">
         <hi>ENCUESTA SOBRE VINOS</hi>
-    </div>
-    <div class="container">
+    </div>-->
+	
+	<!--slide intro-->
+	<div  align="center" class="intro">
+		<div id="parada0"></div>
+		<header id="top">
+        <br>
+        	<div align="center"><img class="logo" src="img/logogn.png" width="40%" /></div>
+        <br>
+        </header>
+		<img src="img_pp/embrace.png" width="50%" />
+        <br>
+        <a href="#parada1"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>
+		<img class="cepas" src="img_pp/cepas.png" />
+		<img class="intro_foto_costado" src="img_pp/intro_foto_costado.png"" />
+	</div>
+    <!-- fin slide intro-->
+
+
+	<div class="container">
+		<div id="parada1"></div>
         <section id="p0">
-            <h3>1.- ¿Qué tipo de vino te gusta?</h3>
+            <!-- <h3 class="pregunta">1.- ¿Qué tipo de vino te gusta?</h3> -->
+            <img class="imgPregunta" src="img_pp/P1.png" width="100%"/>
+            <br>
+            <br>
             <label>
                 <input id="p0.1" type="radio" value="1" name="p0" onclick="respuesta(0, this); document.getElementById('p0.2').disabled=true; document.getElementById('p0.3').disabled=true"> Cabernet
             </label>
@@ -28,9 +46,18 @@
             <label>
                 <input id="p0.3" type="radio" value="3" name="p0" onclick="respuesta(0, this); document.getElementById('p0.1').disabled=true; document.getElementById('p0.2').disabled=true"> Syrah
             </label>
+            <br>
+            <a href="#parada2">
+			<button class= "redondo" >Próxima!</button>
+            </a>
         </section>
+			
+		<div id="parada2"></div>
         <section id="p1">
-            <h3>2.- ¿Con qué comida te gusta tomarlo?</h3>
+            <!-- <h3 class="pregunta">2.- ¿Con qué comida te gusta tomarlo?</h3> -->
+            <img class="imgPregunta" src="img_pp/P2.png" width="100%"/>
+            <br>
+            <br>
             <label>
                 <input id="p1.1" type="radio" value="1" name="p1" onclick="respuesta(1, this); document.getElementById('p1.2').disabled=true; document.getElementById('p1.3').disabled=true"> Carne
             </label>
@@ -40,9 +67,18 @@
             <label>
                 <input id="p1.3" type="radio" value="3" name="p1" onclick="respuesta(1, this); document.getElementById('p1.1').disabled=true; document.getElementById('p1.2').disabled=true"> Pescados y Mariscos
             </label>
+            <br>
+            <a href="#parada3">
+            <button class= "redondo" >Próxima!</button>
+            </a>
         </section>
+			
+		<div id="parada3"></div>
         <section id="p2">
-            <h3>3.- ¿En qué comida del día?</h3>
+            <!-- <h3 class="pregunta">3.- ¿En qué comida del día?</h3> -->
+            <img class="imgPregunta" src="img_pp/P1.png" width="100%"/>
+            <br>
+            <br>
             <label>
                 <input id="p2.1" type="radio" value="1" name="p2" onclick="respuesta(2, this); document.getElementById('p2.2').disabled=true; document.getElementById('p2.3').disabled=true"> Almuerzo
             </label>
@@ -52,12 +88,18 @@
             <label>
                 <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true"> Otro
             </label>
+            <br>
+    <div  align="center" class="intro">
+        <a href="javascript:consultar()"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>
+    </div>
+
         </section>
         <br>
-        <button onclick="consultar()">CONSULTAR</button>
     </div>
 
     <script src="script.js"></script>
+	 
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script_scr.js"></script>
 
 </body>
 </html>

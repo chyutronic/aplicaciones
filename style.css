@@ -19,26 +19,56 @@ header{
     max-width: 700px;
     margin: auto;
     padding: 20px;
+	
 }
 
 section{
-    border: 2px solid #29272e;
+    /* background-color: rgb(204, 197, 197); */
+    /* background-size: 25% 50%; */
+    border: 0px solid #29272e;
     border-radius: 7px;
-    padding: 10px;
+    padding: 60% 5%;
     margin: 10px 0;
 }
 
+.pregunta{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 57, 57);
+    border-radius: 7px;
+    border: 1px solid rgb(48, 48, 48);
+    padding: 7px;
+}
+
+
 label{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fff;
     display: block;
     padding: 7px;
     border-radius: 7px;
     cursor: pointer;
-    border: 1px dashed #ccc;
+    border: 1px solid rgb(255, 57, 57);
     margin-bottom: 3px;
 }
 
 label:hover{
-    background: #5769d38c;
+    background: #5769d3be;
+}
+
+.redondo{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(255, 57, 57);
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
 }
 
 button{
@@ -48,7 +78,6 @@ button{
     display: block;
     margin: auto;
     padding: 10px;
-    background-color: #000;
     border: none;
     cursor: pointer;
     border-radius: 20px;
@@ -60,4 +89,57 @@ button:hover{
 }
 
 
+/** PEPE **/
+header{ 
+    position: sticky;
+}
 
+
+body {
+    background-image:url("img_pp/background.jpg");
+	background-size:     cover;                      /*<------*/
+    background-repeat:   no-repeat;
+    background-position: top center;              /* optional, center the image */
+	margin:0px;  
+}
+
+
+.intro{/*background-image:url("img_pp/intro_foto.jpg");*/
+	background-size: cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: bottom center;              /* optional, center the image */
+	height: 100vh;
+	min-height: 800px;
+	margin:0px;
+	/**height: 1200px;**/
+    /*background-color:#FFFFFF ;*/
+}
+
+top{
+    background-color: #FFFFFF
+}
+
+.comenzar{
+    margin-top: 10%;
+    width: 50%;
+}
+
+.logo{
+    margin-top: 10%
+}
+
+.cepas{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 90%
+}
+
+
+.intro_foto_costado{
+    position: absolute;
+    right: 0;
+	max-height: 50%;
+	max-width: 50%;
+    bottom: 0;
+}
