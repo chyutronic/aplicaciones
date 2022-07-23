@@ -80,34 +80,78 @@
             <br>
             <br>
             <label>
-                <input id="p2.1" type="radio" value="1" name="p2" onclick="respuesta(2, this); document.getElementById('p2.2').disabled=true; document.getElementById('p2.3').disabled=true"> Almuerzo
+                <input id="p2.1" type="radio" value="1" name="p2" onclick="respuesta(2, this); document.getElementById('p2.2').disabled=true; document.getElementById('p2.3').disabled=true; consultar()"> Almuerzo
             </label>
             <label>
-                <input id="p2.2" type="radio" value="2" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.3').disabled=true"> Cena
+                <input id="p2.2" type="radio" value="2" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.3').disabled=true; consultar()"> Cena
             </label>
             <label>
-                <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true"> Otro
+                <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true; consultar()"> Otro
             </label>
             <br>
         <div  align="center" class="intro">
-            <a id="open" href="javascript:consultar()"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>
+            <a id="open"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>
         </div>
 
         </section>
         <br>
     </div>
 
+
     <!-- Div para hacer la ventana modal -->
 
-    <div class="modal_container" id="modal_container">
+    <div class="modal_container" id="modal_container1">
         <div class="modal">
             <h1>Felicitaciones..!</h1>
             <img src="img/sanPedro1.jpg" height="650px"/> 
-            <button class="redondo" id="close">Cerrar</button>
+            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close1">X</button>
+        </div>
+    </div>
+    <div class="modal_container" id="modal_container2">
+        <div class="modal">
+            <h1>Felicitaciones..!</h1>
+            <img src="img/sanPedro2.jpg" height="650px"/> 
+            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close2">X</button>
+        </div>
+    </div>
+    <div class="modal_container" id="modal_container3">
+        <div class="modal">
+            <h1>Felicitaciones..!</h1>
+            <img src="img/sanPedro3.jpg" height="650px"/> 
+            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
+        </div>
+    </div>
+    <div class="modal_container" id="modal_container4">
+        <div class="modal">
+            <h1>Felicitaciones..!</h1>
+            <img src="img/sanPedro4.jpg" height="650px"/> 
+            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close4">X</button>
+        </div>
+    </div>
+    <div class="modal_container" id="modal_container5">
+        <div class="modal">
+            <h1>Felicitaciones..!</h1>
+            <img src="img/sanPedro5.jpg" height="650px"/> 
+            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close5">X</button>
+        </div>
+    </div>
+    <div class="modal_container" id="modal_container6">
+        <div class="modal">
+            <h1>Felicitaciones..!</h1>
+            <img src="img/sanPedro6.jpg" height="650px"/> 
+            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close6">X</button>
+        </div>
+    </div>
+    <div class="modal_container" id="modal_container28">
+        <div class="modal">
+            <!-- <h1>Felicitaciones..!</h1> -->
+            <img src="img/vuelvaIntentarlo.jpg" height="650px"/> 
+            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close28">X</button>
         </div>
     </div>
 
-    <!-- Div para hacer la ventana modal -->
+
+    <!-- FIN Div para hacer la ventana modal -->
 
     <script src="script.js"></script>
 	 
@@ -115,3 +159,6 @@
 
 </body>
 </html>
+
+
+<!-- href="javascript:consultar()" -->

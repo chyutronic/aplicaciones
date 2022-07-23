@@ -20,6 +20,7 @@ header{
     margin: auto;
     padding: 20px;
 	
+	
 }
 
 section{
@@ -67,6 +68,19 @@ label:hover{
     border-radius: 50%;
 }
 
+.botonCerrar{
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 57, 57);
+    position: absolute;
+    right: 46%;
+    bottom: 7%;
+}
+
+
 a{
     text-decoration: none;
 }
@@ -87,6 +101,7 @@ button:hover{
     background: #4459d4;
     color: #fff;
 }
+
 
 
 /** PEPE **/
@@ -124,6 +139,28 @@ top{
     width: 50%;
 }
 
+
+/** SI ES QUE SE PONE HORIZONTAL **/
+@media only screen 
+
+and (orientation : landscape) {
+
+.comenzar {margin-top: 1%;
+           width: 20%;}
+	
+.cepas{
+    
+    display: none;
+	
+}
+section{
+    padding: 30% 5%;
+    margin: 10px 0;
+}
+}
+/** FIN SI ES QUE SE PONE HORIZONTAL **/
+
+
 .logo{
     margin-top: 10%
 }
@@ -132,7 +169,8 @@ top{
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 90%
+    width: 90%;
+	z-index: -2;
 }
 
 
@@ -142,6 +180,7 @@ top{
 	max-height: 50%;
 	max-width: 50%;
     bottom: 0;
+	z-index: -1
 }
 
 
@@ -181,4 +220,21 @@ top{
 .modal h1{
     margin: 0;
 }
+
+.botella_premio {height: 80%;}
+
+
+/** SI ES QUE SE PONE HORIZONTAL MODAL **/
+
+@media only screen 
+
+and (orientation : landscape) {
+
+
+.modal{
+    
+    height: 60%;
+}
+}
+/** FIN SI ES QUE SE PONE HORIZONTAL MODAL **/
 
