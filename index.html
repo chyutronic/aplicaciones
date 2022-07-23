@@ -89,13 +89,25 @@
                 <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true"> Otro
             </label>
             <br>
-    <div  align="center" class="intro">
-        <a href="javascript:consultar()"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>
-    </div>
+        <div  align="center" class="intro">
+            <a id="open" href="javascript:consultar()"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>
+        </div>
 
         </section>
         <br>
     </div>
+
+    <!-- Div para hacer la ventana modal -->
+
+    <div class="modal_container" id="modal_container">
+        <div class="modal">
+            <h1>Felicitaciones..!</h1>
+            <img src="img/sanPedro1.jpg" height="650px"/> 
+            <button class="redondo" id="close">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Div para hacer la ventana modal -->
 
     <script src="script.js"></script>
 	 
