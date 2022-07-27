@@ -25,7 +25,7 @@
         <br>
         <a href="#parada1"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>
 		<img class="cepas" src="img_pp/cepas.png" />
-		<img class="intro_foto_costado" src="img_pp/intro_foto_costado.png"" />
+		<img class="intro_foto_costado" src="img_pp/intro_foto_costado.png" />
 	</div>
     <!-- fin slide intro-->
 
@@ -34,101 +34,184 @@
 		<div id="parada1"></div>
         <section id="p0">
             <!-- <h3 class="pregunta">1.- ¿Qué tipo de vino te gusta?</h3> -->
-            <img class="imgPregunta" src="img_pp/P1.png" width="100%"/>
+            <img class="imgPregunta" src="img_pp/P1.png"/>
             <br>
             <br>
             <label>
-                <input id="p0.1" type="radio" value="1" name="p0" onclick="respuesta(0, this); document.getElementById('p0.2').disabled=true; document.getElementById('p0.3').disabled=true"> Cabernet
+                <input id="p0.1" type="radio" value="1" name="p0" onclick="respuesta(0, this); document.getElementById('p0.2').disabled=true; document.getElementById('p0.3').disabled=true"> 
+                a) Suaves y frutales
             </label>
             <label>
-                <input id="p0.2" type="radio" value="2" name="p0" onclick="respuesta(0, this); document.getElementById('p0.1').disabled=true; document.getElementById('p0.3').disabled=true"> Malbec
+                <input id="p0.2" type="radio" value="2" name="p0" onclick="respuesta(0, this); document.getElementById('p0.1').disabled=true; document.getElementById('p0.3').disabled=true"> 
+                b) Ácidos y frescos
             </label>
             <label>
-                <input id="p0.3" type="radio" value="3" name="p0" onclick="respuesta(0, this); document.getElementById('p0.1').disabled=true; document.getElementById('p0.2').disabled=true"> Syrah
-            </label>
+                <input id="p0.3" type="radio" value="3" name="p0" onclick="respuesta(0, this); document.getElementById('p0.1').disabled=true; document.getElementById('p0.2').disabled=true"> 
+                c) Intensos y frutales
+          </label>
             <br>
             <a href="#parada2">
-			<button class= "redondo" >Próxima!</button>
+			<img class="siguiente" src="img_pp/boton_siguiente.png"/>
             </a>
         </section>
 			
 		<div id="parada2"></div>
         <section id="p1">
             <!-- <h3 class="pregunta">2.- ¿Con qué comida te gusta tomarlo?</h3> -->
-            <img class="imgPregunta" src="img_pp/P2.png" width="100%"/>
+            <img class="imgPregunta" src="img_pp/P2.png"/>
             <br>
             <br>
             <label>
-                <input id="p1.1" type="radio" value="1" name="p1" onclick="respuesta(1, this); document.getElementById('p1.2').disabled=true; document.getElementById('p1.3').disabled=true"> Carne
+                <input id="p1.1" type="radio" value="1" name="p1" onclick="respuesta(1, this); document.getElementById('p1.2').disabled=true; document.getElementById('p1.3').disabled=true"> 
+                a) Pescado
             </label>
             <label>
-                <input id="p1.2" type="radio" value="2" name="p1" onclick="respuesta(1, this); document.getElementById('p1.1').disabled=true; document.getElementById('p1.3').disabled=true"> Pollo
-            </label>
+                <input id="p1.2" type="radio" value="2" name="p1" onclick="respuesta(1, this); document.getElementById('p1.1').disabled=true; document.getElementById('p1.3').disabled=true"> 
+                b) Pastas</label>
             <label>
-                <input id="p1.3" type="radio" value="3" name="p1" onclick="respuesta(1, this); document.getElementById('p1.1').disabled=true; document.getElementById('p1.2').disabled=true"> Pescados y Mariscos
-            </label>
+                <input id="p1.3" type="radio" value="3" name="p1" onclick="respuesta(1, this); document.getElementById('p1.1').disabled=true; document.getElementById('p1.2').disabled=true"> 
+                c) Carnes</label>
             <br>
             <a href="#parada3">
-            <button class= "redondo" >Próxima!</button>
+            <img class="siguiente" src="img_pp/boton_siguiente.png"/>
             </a>
         </section>
 			
 		<div id="parada3"></div>
         <section id="p2">
             <!-- <h3 class="pregunta">3.- ¿En qué comida del día?</h3> -->
-            <img class="imgPregunta" src="img_pp/P1.png" width="100%"/>
+            <img class="imgPregunta" src="img_pp/P3.png"/>
             <br>
             <br>
             <label>
-                <input id="p2.1" type="radio" value="1" name="p2" onclick="respuesta(2, this); document.getElementById('p2.2').disabled=true; document.getElementById('p2.3').disabled=true; consultar()"> Almuerzo
-            </label>
+                <input id="p2.1" type="radio" value="1" name="p2" onclick="respuesta(2, this); document.getElementById('p2.2').disabled=true; document.getElementById('p2.3').disabled=true; consultar()">
+                a) Tarde con amigos         </label>
             <label>
-                <input id="p2.2" type="radio" value="2" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.3').disabled=true; consultar()"> Cena
-            </label>
+                <input id="p2.2" type="radio" value="2" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.3').disabled=true; consultar()">
+            b) Cena con tu pareja o famila         </label>
             <label>
-                <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true; consultar()"> Otro
+                <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true; consultar()"> 
+                c) Celebración
             </label>
             <br>
-        <div  align="center" class="intro">
-            <a id="open"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>
-        </div>
+        <div  align="center">
+          <!--<a id="open"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>-->
+		  <a id="open"><img class="botonPresioname" src="img_pp/boton_presioname.png" alt=""/></a> </div>
 
         </section>
         <br>
     </div>
 
-
     <!-- Div para hacer la ventana modal -->
-
+<!--inicio RESULTADO Cabernet Sauvignon-->
     <div class="modal_container" id="modal_container1">
         <div class="modal">
-            <h1>Felicitaciones..!</h1>
-            <img src="img/sanPedro1.jpg" height="650px"/> 
-            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close1">X</button>
+			<div class="kv_container" align="center">
+				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
+				<img class="botella_premio" src="img_botellas/fondo_cs.jpg"/>
+				<h2>Bienvenido a nuestro maravilloso mundo de saboRRR.</h2>
+                <p>Descubre nuestro audaz y elegante <strong>Cabernet Sauvignon</strong>, un vino de aromas frescos e intensos con notas a vainilla y chocolate, con un largo y agradable final.
+                Ideal para disfrutar con <strong>carnes</strong> y <strong>quesos</strong>. </p>
+					<table width="90%" border="0">
+					  <tbody>
+						<tr>
+						  <td></td>
+						  <td><img class="maridaje" src="img_botellas/icon_carne.png"/><img class="maridaje" src="img_botellas/icon_queso.png"/></td>
+							  <td></td>
+						</tr>
+					  </tbody>
+					</table><br>
+			</div>
+			<form method="post" action="enviarMail.php">
+				  <input type="email" id="email" name="email">
+				  <input type="submit" class="botonEnviar">
+				</form>
+          <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
         </div>
     </div>
+	<!--fin RESULTADO Cabernet Sauvignon-->
+    <!--inicio RESULTADO Merlot-->
     <div class="modal_container" id="modal_container2">
         <div class="modal">
-            <h1>Felicitaciones..!</h1>
-            <img src="img/sanPedro2.jpg" height="650px"/> 
-            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close2">X</button>
+			<div class="kv_container" align="center">
+				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
+				<img class="botella_premio" src="img_botellas/fondo_me.jpg"/>
+				<h2>Bienvenido a nuestro maravilloso mundo de saboRRR.</h2>
+                <p>Descubre nuestro suave y frutal <strong>Merlot</strong>, un vino de aromas frescos e intensos, con aromas a vainilla, de cuerpo medio y taninos suaves.
+                Ideal para disfrutar con <strong>pastas</strong> y <strong>carnes</strong>. </p>
+					<table width="90%" border="0">
+					  <tbody>
+						<tr>
+						  <td></td>
+						  <td><img class="maridaje" src="img_botellas/icon_pastas.png"/><img class="maridaje" src="img_botellas/icon_carne.png"/></td>
+							  <td></td>
+						</tr>
+					  </tbody>
+					</table><br>
+			</div>
+			<form method="post" action="enviarMail.php">
+				  <input type="email" id="email" name="email">
+				  <input type="submit" class="botonEnviar">
+				</form>
+          <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
         </div>
     </div>
+	<!--fin RESULTADO Merlot-->
+    <!--inicio RESULTADO Carmenere-->
     <div class="modal_container" id="modal_container3">
         <div class="modal">
-            <h1>Felicitaciones..!</h1>
-            <img src="img/sanPedro3.jpg" height="650px"/> 
-            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
+			<div class="kv_container" align="center">
+				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
+				<img class="botella_premio" src="img_botellas/fondo_ca.jpg"/>
+				<h2>Bienvenido a nuestro maravilloso mundo de saboRRR.</h2>
+                <p>Descubre nuestro suave y frutal <strong>Carmenere</strong>, un vino de aromas frescos y maduros, de acidez balanceada, taninos suaves y agradable final.
+                Ideal para disfrutar con <strong>carnes</strong>, <strong>cerdo</strong> y <strong>comidas especiadas</strong>.</p>
+					<table width="90%" border="0">
+					  <tbody>
+						<tr>
+						  <td></td>
+						  <td><img class="maridaje" src="img_botellas/icon_carne.png"/><img class="maridaje" src="img_botellas/icon_chancho.png"/><img class="maridaje" src="img_botellas/icon_especiado.png"/></td>
+							  <td></td>
+						</tr>
+					  </tbody>
+					</table><br>
+			</div>
+			<form method="post" action="enviarMail.php">
+				  <input type="email" id="email" name="email">
+				  <input type="submit" class="botonEnviar">
+				</form>
+          <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
         </div>
     </div>
+	<!--fin RESULTADO Carmenere-->
+    <!--inicio RESULTADO Sauvignon Blanc-->
     <div class="modal_container" id="modal_container4">
         <div class="modal">
-            <h1>Felicitaciones..!</h1>
-            <img src="img/sanPedro4.jpg" height="650px"/> 
-            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close4">X</button>
+			<div class="kv_container" align="center">
+				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
+				<img class="botella_premio" src="img_botellas/fondo_sb.jpg"/>
+				<h2>Bienvenido a nuestro maravilloso mundo de saboRRR.</h2>
+                <p>Descubre nuestro fresco y frutal <strong>Sauvignon blanc</strong>, un vino de romas frescos, notas a frutas tropicales con un largo y afrutado final. 
+                Ideal para disfrutar con <strong>pescados</strong>, <strong>mariscos o ensaladas</strong>. </p>
+					<table width="90%" border="0">
+					  <tbody>
+						<tr>
+						  <td></td>
+						  <td><img class="maridaje" src="img_botellas/icon_pez.png"/><img class="maridaje" src="img_botellas/icon_marisco.png"/><img class="maridaje" src="img_botellas/icon_lechuga.png"/></td>
+						  <td></td>
+						</tr>
+					  </tbody>
+					</table><br>
+			</div>
+			<form method="post" action="enviarMail.php">
+				  <input type="email" id="email" name="email">
+				  <input type="submit" class="botonEnviar">
+				</form>
+          <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
         </div>
     </div>
-    <div class="modal_container" id="modal_container5">
+	<!--fin RESULTAD Sauvignon Blanc-->
+    <!-- <div class="modal_container" id="modal_container5">
         <div class="modal">
             <h1>Felicitaciones..!</h1>
             <img src="img/sanPedro5.jpg" height="650px"/> 
@@ -144,11 +227,11 @@
     </div>
     <div class="modal_container" id="modal_container28">
         <div class="modal">
-            <!-- <h1>Felicitaciones..!</h1> -->
-            <img src="img/vuelvaIntentarlo.jpg" height="650px"/> 
+            <h1>Felicitaciones..!</h1> -->
+            <!-- <img src="img/vuelvaIntentarlo.jpg" height="650px"/> 
             <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close28">X</button>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- FIN Div para hacer la ventana modal -->
@@ -162,3 +245,5 @@
 
 
 <!-- href="javascript:consultar()" -->
+
+<!-- href="php:guardarBBDD()" -->

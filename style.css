@@ -25,7 +25,8 @@ section{
     /* background-size: 25% 50%; */
     border: 0px solid #29272e;
     border-radius: 7px;
-    padding: 60% 5%;
+    /*padding: 60% 5%;*/
+	padding: 20% 5% 70% 5%;
     margin: 10px 0;
 }
 
@@ -38,16 +39,18 @@ section{
     padding: 7px;
 }
 
+.imgPregunta{width:100%;}
 
 label{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.75em;
     background-color: #fff;
     display: block;
     padding: 7px;
     border-radius: 7px;
     cursor: pointer;
-    border: 1px solid rgb(255, 57, 57);
+    /**border: 1px solid rgb(255, 57, 57);**/
+	border: 20px solid rgb(204, 197, 197);
     margin-bottom: 3px;
 }
 
@@ -73,8 +76,8 @@ label:hover{
     border-radius: 50%;
     background-color: rgba(255, 57, 57);
     position: absolute;
-    right: 46%;
-    bottom: 7%;
+    right: 7%;
+    top: 7%;
 }
 
 
@@ -94,6 +97,17 @@ button{
     border-radius: 20px;
 }
 
+.siguiente{
+    
+   
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: auto;
+
+ 
+}
+
 button:hover{
     background: #4459d4;
     color: #fff;
@@ -102,6 +116,10 @@ button:hover{
 
 
 /** PEPE **/
+
+.botonPresioname{width: 80%;
+height: auto;}
+
 header{ 
     position: sticky;
 }
@@ -136,37 +154,21 @@ top{
     width: 50%;
 }
 
-
-/** SI ES QUE SE PONE HORIZONTAL **/
-@media only screen 
-
-and (orientation : landscape) {
-
-.comenzar {margin-top: 1%;
-           width: 20%;}
-	
-.cepas{
-    
-    display: none;
-	
+.botonVeCualestucepa{
+    margin-top: 2%;
+    width: 70%;
 }
-section{
-    padding: 30% 5%;
-    margin: 10px 0;
-}
-}
-/** FIN SI ES QUE SE PONE HORIZONTAL **/
-
 
 .logo{
     margin-top: 10%
+		
 }
 
 .cepas{
-    position: fixed;
-    left: 0;
+    position:absolute;
+    left: 5%;
     bottom: 0;
-    width: 90%;
+    width: 70%;
 	z-index: -2;
 }
 
@@ -189,12 +191,14 @@ section{
     align-items: center;
     justify-content: center;
     position: fixed;
-    pointer-events: none;
+   /*pointer-events: none; se lo saque porque no deja cliquear en campo de mails*/
+	pointer-events: none;
     top: 0;
     left: 0;
-    height: 100vh;
+   height: 100vh;
     width: 100vw;
     opacity: 0;
+	/*cambiar valor a 0*/
 }
 
 .show{
@@ -205,8 +209,8 @@ section{
 
 .modal{
     background-color: #fff;
-    width: 55%;
-    height: 75%;
+    width: 90%;
+    height: 90%;
     max-width: 100%;
     padding: 30px 50px;
     border-radius: 20px;
@@ -219,10 +223,43 @@ section{
     margin: 0;
 }
 
-.botella_premio {height: 80%;}
+/* .botonEnviar{ */
+    
+    /*font-size:14px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        color:white;
+        background:#638cb5;
+        border:0px;
+        width:80px;
+        height:20px;*/
+/* } */
 
 
-/** SI ES QUE SE PONE HORIZONTAL MODAL **/
+/** CSS PREMIOS **/
+.logoPremio{
+    margin-top: 1%;
+	width: 60%;
+}
+.botella_premio {    width:90%;
+	max-height: 500px;
+	max-width: 526px;
+
+}
+.maridaje{margin: auto;
+width: 30%;
+max-width: 50px;}
+
+td{text-align:center;}
+table{max-width: 50%;}
+
+.kv_container{  /*background-image:url("img_botellas/fondo_cs.jpg");*/
+	background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: top center;          /* optional, center the image */
+	margin: auto; }
+p{max-width: 80%;}
+/** SI ES QUE SE PONE HORIZONTAL  **/
 
 @media only screen 
 
@@ -231,8 +268,52 @@ and (orientation : landscape) {
 
 .modal{
     
-    height: 60%;
+    height: 90%;
 }
+.maridaje{margin: auto;
+width: 20%;}
+p{max-width: 50%;}
+
+td{text-align:center;}
+
+
+.logoPremio{
+    margin-top: 0px;
+	width: 40%;
 }
-/** FIN SI ES QUE SE PONE HORIZONTAL MODAL **/
+.botella_premio {    width:80%;
+	max-height: 420px;
+	max-width: 442px;
+
+}
+
+.logo{
+    margin-top: 1%;
+	width: 40%;
+}
+
+
+.comenzar {margin-top: 1%;
+           width: 30%;}
+	
+.cepas{
+    
+    display: none;
+	
+}
+section{
+    padding: 10% 5% 50% 5%;
+    margin: 10px 0;
+}
+	
+.botonVeCualestucepa{
+    
+    width: 40%;
+}
+	}
+
+/** FIN SI ES QUE SE PONE HORIZONTAL **/
+
+
+
 
