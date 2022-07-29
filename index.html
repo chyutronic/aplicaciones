@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GATONEGRO</title>
     <link rel="stylesheet" href="style.css">
+	<meta name="robots" content="noindex" />
 </head>
 <body>
     
@@ -18,15 +19,15 @@
 		<div id="parada0"></div>
 		<header id="top">
         <br>
-        	<div align="center"><img class="logo" src="img/logogn.png" width="40%" /></div>
+        	<div align="center"><img class="logo" src="img/logogn.png" /></div>
         <br>
         </header>
 		<img src="img_pp/embrace.png" width="50%" />
         <br>
-        <!-- href="javascript:mostrarPreguntas()" -->
         <a id="openP0"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>
-		<img class="cepas" src="img_pp/cepas.png" />
-		<img class="intro_foto_costado" src="img_pp/intro_foto_costado.png" />
+		<!--<img class="cepas" src="img_pp/cepas.png" />-->
+		<img class="cepas" src="img_pp/cepas_vertical.png" />
+		<img class="intro_foto_costado" src="img_pp/intro_foto_costado_color_400px.png" />
 	</div>
     <!-- fin slide intro-->
 
@@ -36,7 +37,7 @@
 		<div id="parada1"></div> -->
             <section id="p0">
                 <!-- <h3 class="pregunta">1.- ¿Qué tipo de vino te gusta?</h3> -->
-                <img class="imgPregunta" src="img_pp/P1.png"/>
+                <div  align="center"><img class="imgPregunta" src="img_pp/P1.png"/></div>
                 <br>
                 <br>
                 <label>
@@ -50,10 +51,10 @@
                 <label>
                     <input id="p0.3" type="radio" value="3" name="p0" onclick="respuesta(0, this); document.getElementById('p0.1').disabled=true; document.getElementById('p0.2').disabled=true; mostrarPreguntas()"> 
                     c) Intensos y frutales
-                </label>
+            </label>
                 <br>
                 <a id="openP1" href="#parada2">
-                <img class="siguiente" src="img_pp/boton_siguiente.png"/>
+                <img class="siguiente" src="img_pp/boton_siguiente.jpg"/>
                 </a>
             </section>
         </div>
@@ -64,7 +65,7 @@
 		<!-- <div id="parada2"></div> -->
             <section id="p1">
                 <!-- <h3 class="pregunta">2.- ¿Con qué comida te gusta tomarlo?</h3> -->
-                <img class="imgPregunta" src="img_pp/P2.png"/>
+                <div  align="center"><img class="imgPregunta" src="img_pp/P2.png"/></div>
                 <br>
                 <br>
                 <label>
@@ -79,18 +80,18 @@
                     c) Carnes</label>
                 <br>
                 <a id="openP2" href="#parada3">
-                <img class="siguiente" src="img_pp/boton_siguiente.png"/>
+                <img class="siguiente" src="img_pp/boton_siguiente.jpg"/>
                 </a>
             </section>
         </div>
-    </div>		
-
+    </div>    
+			
     <div class="modal_container" id="modal_container_P2">
         <div class="modal">
 		<!-- <div id="parada3"></div> -->
             <section id="p2">
                 <!-- <h3 class="pregunta">3.- ¿En qué comida del día?</h3> -->
-                <img class="imgPregunta" src="img_pp/P3.png"/>
+                <div  align="center"><img class="imgPregunta" src="img_pp/P3.png"/></div>
                 <br>
                 <br>
                 <label>
@@ -105,14 +106,11 @@
                 </label>
                 <br>
                 <div  align="center">
-                    <!--<a id="open"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>-->
-                    <a id="open"><img class="botonPresioname" src="img_pp/boton_presioname.png" alt=""/></a> 
+                <a id="open"><img class="botonPresioname" src="/img_pp/boton_presioname_v2.png" alt=""/></a> 
                 </div>
             </section>
-        <br>
         </div>
     </div>
-
 
     <!-- Div para hacer la ventana modal -->
 <!--inicio RESULTADO Cabernet Sauvignon-->
@@ -122,8 +120,8 @@
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
 				<img class="botella_premio" src="img_botellas/fondo_cs.jpg"/>
 				<h2>Bienvenido a nuestro maravilloso mundo de saboRRR.</h2>
-                <p>Descubre nuestro audaz y elegante <strong>Cabernet Sauvignon</strong>, un vino de aromas frescos e intensos con notas a vainilla y chocolate, con un largo y agradable final.
-                Ideal para disfrutar con <strong>carnes</strong> y <strong>quesos</strong>. </p>
+                <p>Descubre nuestro audaz y elegante <b>Cabernet Sauvignon</b>, un vino de aromas frescos e intensos con notas a vainilla y chocolate, con un largo y agradable final.
+                Ideal para disfrutar con <b>carnes</b> y <b>quesos</b>. </p>
 					<table width="90%" border="0">
 					  <tbody>
 						<tr>
@@ -135,10 +133,10 @@
 					</table><br>
 			</div>
 			<form method="post" action="enviarMailCS.php">
-				  <input type="email" id="email" name="email">
+				  <input type="email" id="email" name="email" placeholder="ingresar e-mail">
 				  <input type="submit" class="botonEnviar">
 				</form>
-          <!-- <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> -->
+           <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> 
         </div>
     </div>
 	<!--fin RESULTADO Cabernet Sauvignon-->
@@ -150,8 +148,8 @@
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
 				<img class="botella_premio" src="img_botellas/fondo_me.jpg"/>
 				<h2>Bienvenido a nuestro maravilloso mundo de saboRRR.</h2>
-                <p>Descubre nuestro suave y frutal <strong>Merlot</strong>, un vino de aromas frescos e intensos, con aromas a vainilla, de cuerpo medio y taninos suaves.
-                Ideal para disfrutar con <strong>pastas</strong> y <strong>carnes</strong>. </p>
+                <p>Descubre nuestro suave y frutal <b>Merlot</b>, un vino de aromas frescos e intensos, con aromas a vainilla, de cuerpo medio y taninos suaves.
+                Ideal para disfrutar con <b>pastas</b> y <b>carnes</b>. </p>
 					<table width="90%" border="0">
 					  <tbody>
 						<tr>
@@ -163,10 +161,10 @@
 					</table><br>
 			</div>
 			<form method="post" action="enviarMailME.php">
-				  <input type="email" id="email" name="email">
+				  <input type="email" id="email" name="email" placeholder="ingresar e-mail">
 				  <input type="submit" class="botonEnviar">
 				</form>
-          <!-- <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> -->
+         <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
         </div>
     </div>
 	<!--fin RESULTADO Merlot-->
@@ -178,8 +176,8 @@
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
 				<img class="botella_premio" src="img_botellas/fondo_ca.jpg"/>
 				<h2>Bienvenido a nuestro maravilloso mundo de saboRRR.</h2>
-                <p>Descubre nuestro suave y frutal <strong>Carmenere</strong>, un vino de aromas frescos y maduros, de acidez balanceada, taninos suaves y agradable final.
-                Ideal para disfrutar con <strong>carnes</strong>, <strong>cerdo</strong> y <strong>comidas especiadas</strong>.</p>
+                <p>Descubre nuestro suave y frutal <b>Carmenere</b>, un vino de aromas frescos y maduros, de acidez balanceada, taninos suaves y agradable final.
+                Ideal para disfrutar con <b>carnes</b>, <b>cerdo</b> y <b>comidas especiadas</b>.</p>
 					<table width="90%" border="0">
 					  <tbody>
 						<tr>
@@ -191,10 +189,10 @@
 					</table><br>
 			</div>
 			<form method="post" action="enviarMailCA.php">
-				  <input type="email" id="email" name="email">
+				  <input type="email" id="email" name="email" placeholder="ingresar e-mail">
 				  <input type="submit" class="botonEnviar">
 				</form>
-          <!-- <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> -->
+           <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> 
         </div>
     </div>
 	<!--fin RESULTADO Carmenere-->
@@ -206,8 +204,8 @@
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
 				<img class="botella_premio" src="img_botellas/fondo_sb.jpg"/>
 				<h2>Bienvenido a nuestro maravilloso mundo de saboRRR.</h2>
-                <p>Descubre nuestro fresco y frutal <strong>Sauvignon blanc</strong>, un vino de romas frescos, notas a frutas tropicales con un largo y afrutado final. 
-                Ideal para disfrutar con <strong>pescados</strong>, <strong>mariscos o ensaladas</strong>. </p>
+                <p>Descubre nuestro fresco y frutal <b>Sauvignon blanc</b>, un vino de romas frescos, notas a frutas tropicales con un largo y afrutado final. 
+                Ideal para disfrutar con <b>pescados</b>, <b>mariscos o ensaladas</b>. </p>
 					<table width="90%" border="0">
 					  <tbody>
 						<tr>
@@ -219,23 +217,31 @@
 					</table><br>
 			</div>
 			<form method="post" action="enviarMailSB.php">
-				  <input type="email" id="email" name="email">
+				  <input type="email" id="email" name="email" placeholder="ingresar e-mail">
 				  <input type="submit" class="botonEnviar">
 				</form>
-          <!-- <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> -->
+           <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
         </div>
     </div>
 	<!--fin RESULTAD Sauvignon Blanc-->
 
     </div>
-    <div class="modal_container" id="modal_container28">
-        <div class="modal">
-            <h1>Lo lamentamos..!</h1>
-            <img src="img/vuelvaIntentarlo.jpg" height="650px"/> 
-            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close28">X</button>
+    <!--inicio RESULTADO ERROR-->
+    <div class="modal_container" id="modal_container28" style="display: inherit;">
+        <div class="modal" style="height: auto; width: auto;">
+			<div class="kv_container" align="center">
+				<div align="center"><img class="logoPremio" src="img/logogn.png"/></div>
+			
+				<h2>Debes responder todas las preguntas y en orden :)</h2>
+				<br>	<img class="iso" src="img/iso_gn.png"/>
+					
+				<button onclick="cerrarVentanaModal()" id="close3" >OK</button>
+			</div>
+			
+          <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3" style="right: 2%; top: 2%;">X</button>
         </div>
     </div>
-
+	<!--fin RESULTADO ERROR-->
     <!-- FIN Div para hacer la ventana modal -->
 
     <script src="script.js"></script>
@@ -244,3 +250,4 @@
 
 </body>
 </html>
+

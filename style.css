@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Helvetica';
+	font-size: 16px;
 }
 
 header{
@@ -43,14 +44,15 @@ section{
 
 label{
     font-weight: bold;
-    font-size: 1.75em;
+    font-size: 1.55em;
     background-color: #fff;
     display: block;
     padding: 7px;
-    border-radius: 7px;
+    border-radius: 1px;
     cursor: pointer;
     /**border: 1px solid rgb(255, 57, 57);**/
-	border: 20px solid rgb(204, 197, 197);
+	/**border: 10px solid rgb(204, 197, 197);**/
+	border: 5px solid rgba(225,225,225,1.00);
     margin-bottom: 3px;
 }
 
@@ -75,9 +77,10 @@ label:hover{
     height: 40px;
     border-radius: 50%;
     background-color: rgba(255, 57, 57);
+	background-color:#737473;
     position: absolute;
-    right: 7%;
-    top: 7%;
+    right: 3%;
+    top: 3%;
 }
 
 
@@ -95,15 +98,19 @@ button{
     border: none;
     cursor: pointer;
     border-radius: 20px;
+	background-color: #000379;
 }
 
 .siguiente{
+    
+   
     width: 50%;
     display: block;
     margin: auto;
     padding: auto;
-}
 
+ 
+}
 
 button:hover{
     background: #4459d4;
@@ -111,7 +118,12 @@ button:hover{
 }
 
 
+
 /** PEPE **/
+
+.iso{max-width: 250px;
+width: 50%;}
+
 
 .botonPresioname{
 width: 250px;
@@ -159,17 +171,22 @@ top{
 }
 
 .logo{
-    margin-top: 10%
-		
+    margin-top: 10%;
+	width: 60%;
+	max-width: 472px;
+	
 }
+		
+
 
 .cepas{
     position:absolute;
-    left: 5%;
+    /*left: 5%; esta es cuando está abajo*/
+	left: 0px;
     bottom: 0;
-    width: 70%;
+    width:25%;
 	z-index: -2;
-}
+	max-width: 196px;}
 
 
 .intro_foto_costado{
@@ -177,7 +194,7 @@ top{
     right: 0;
 	max-height: 50%;
 	max-width: 50%;
-    bottom: 0;
+    bottom: -7%;
 	z-index: -1
 }
 
@@ -190,7 +207,8 @@ top{
     align-items: center;
     justify-content: center;
     position: fixed;
-    pointer-events: none;
+   /*pointer-events: none; se lo saque porque no deja cliquear en campo de mails*/
+	pointer-events: none;
     top: 0;
     left: 0;
    height: 100vh;
@@ -207,10 +225,10 @@ top{
 
 .modal{
     background-color: #fff;
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
     max-width: 100%;
-    padding: 30px 50px;
+    padding: 10px 10px 50px;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -236,10 +254,10 @@ top{
 
 /** CSS PREMIOS **/
 .logoPremio{
-    margin-top: 1%;
+    margin-top: 0px;
 	width: 60%;
 }
-.botella_premio {    width:90%;
+.botella_premio {    width:80%;
 	max-height: 500px;
 	max-width: 526px;
 
@@ -256,20 +274,57 @@ table{max-width: 50%;}
     background-repeat:   no-repeat;
     background-position: top center;          /* optional, center the image */
 	margin: auto; }
-p{max-width: 80%;}
+
+.kv_container p{max-width: 95%;
+font-size: 1rem;
+margin: 9px;
+line-height : 1rem;}
+
+.kv_container h2{padding: 0px;
+margin: 0px;
+font-size: 1.2rem;
+line-height : 1.1rem;}
+
+
+
+.kv_container strong{font-size: 0.6rem;}
+
 /** SI ES QUE SE PONE HORIZONTAL  **/
 
+
 @media only screen 
-
 and (orientation : landscape) {
+.intro_foto_costado{
+	width: 20%;
+	max-height:inherit;
+	max-width: 400px;
+	bottom: -12%;}
+	
+.botonPresioname{width: 50%;
+height: auto;}
+	
+.siguiente{
+  width: 30%;
+ 
+}
 
+.imgPregunta{width:70%;
+	 }
+	
+.botella_premio {
+	width:10%;
+	max-height: 420px;
+	max-width: 442px;
+
+}
+	
 
 .modal{
     
     height: 90%;
 }
 .maridaje{margin: auto;
-width: 20%;}
+width: 10%;}
 p{max-width: 50%;}
 
 td{text-align:center;}
@@ -277,17 +332,14 @@ td{text-align:center;}
 
 .logoPremio{
     margin-top: 0px;
-	width: 40%;
+	width: 30%;
 }
-.botella_premio {    width:80%;
-	max-height: 420px;
-	max-width: 442px;
 
-}
 
 .logo{
     margin-top: 1%;
 	width: 40%;
+	
 }
 
 
@@ -296,8 +348,7 @@ td{text-align:center;}
 	
 .cepas{
     
-    display: none;
-	
+    
 }
 section{
     padding: 10% 5% 50% 5%;
@@ -311,7 +362,86 @@ section{
 	}
 
 /** FIN SI ES QUE SE PONE HORIZONTAL **/
+/** PANTALLAS MÁS ANTIGUAS*/
+@media only screen 
+and (orientation: portrait)  
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+.botella_premio {
+		    width:60%;
+	max-height: 420px;
+	max-width: 442px;
+
+}
+	}
 
 
+/** para tablet*/
+@media only screen 
+	and (orientation: portrait) 
+	and (min-width: 768px) { 
+.kv_container p{
+	max-width: 65%;
+	font-size: 1.6rem;
+	padding-bottom: 2rem;
+	line-height : 1.6rem;}
+
+.kv_container h2{
+	padding: 0px;
+	padding-bottom: 2rem;
+	max-width: 90%;
+	margin: 0px;
+	font-size: 3rem;
+	line-height : 3rem;}
+
+.kv_container b{font-size: 1.6rem;}
+
+.maridaje{
+	margin: auto;
+	width: 30%;
+	max-width: 80px;}
+}
+/** para tablet horizontal*/
+@media only screen 
+	and (orientation: landscape) 
+	and (min-width: 768px) { 
+
+.botonPresioname{width: 75%;
+height: auto;}
+		
+.botella_premio {
+	width:30%;
+	max-height: 420px;
+	max-width: 442px;
+}
+	
+.modal{
+    height: 90%;
+}
+		
+.maridaje{margin: auto;
+width: 30%;}
+		
+.kv_container p{
+	max-width: 65%;
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+	line-height : 1.2rem;}
+		
+.kv_container b{font-size: 1.2rem;}
+		
+.logoPremio{
+    margin-top: 2%;
+	width: 40%;
+}
+
+.kv_container h2{
+	padding: 0px;
+	padding-bottom: 1rem;
+	max-width: 90%;
+	margin: 0px;
+	font-size: 2.2rem;
+	line-height : 2.2rem;}
 
 
+}

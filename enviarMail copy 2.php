@@ -45,7 +45,7 @@
     $conexion = mysqli_connect($db_host, $db_usuario, $db_contrasena, $db_nombre);
 
 
-    $date = date('Y-m-d H:i:s');
+    $date = date('Y-m-d');
     $ingreso = "INSERT INTO consultas_realizadas VALUES ('$date', '$to', 'CS');";
 
 

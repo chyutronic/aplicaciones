@@ -4,28 +4,46 @@
 
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
-    $from = "test@gatonegro.suculenta.cl";
+    $from = "GatoNegro <noreply@gatonegro.sclnt.cl>";
     $to = $_POST['email'];
-    $subject = "Gracias por celebrar tu sabor..!";
+    $subject = "Bienvenido a nuestro maravilloso mundo de saboRRR!";
     $message = 
     '
     <html> 
     <head> 
-    <title>Te enviamos tu cepa</title> 
+    <title>Celebra tu Sabor</title> 
     </head> 
     <body> 
-    <h1>Hola!</h1> 
-    <p> 
-    <b>Bienvenidos a Gato Negro</b>. Gracias por usar nuestra aplicación..! Tu opción elegida es:
-    <img class="botella_premio" src="http://wwww.suculenta.cl/app_5/img_botellas/fondo_cs.jpg"/>
-    </p> 
+    <!--inicio RESULTADO Cabernet Sauvignon-->
+    <div class="modal_container" id="modal_container_CS">
+        <div class="modal">
+			<div class="kv_container" align="center">
+				<div align="center"><img class="logoPremio" src="https://gatonegro.sclnt.cl/img_botellas/tu_gn_es.png" width="80%"/></div>
+				<img class="botella_premio" src="https://gatonegro.sclnt.cl/img_botellas/fondo_cs.jpg" width="80%"/>
+				<h2>Bienvenido a nuestro maravilloso mundo de saboRRR.</h2>
+                <p>Descubre nuestro audaz y elegante <strong>Cabernet Sauvignon</strong>, un vino de aromas frescos e intensos con notas a vainilla y chocolate, con un largo y agradable final.
+                Ideal para disfrutar con <strong>carnes</strong> y <strong>quesos</strong>. </p>
+					<table width="90%" border="0">
+					  <tbody>
+						<tr>
+						  <td></td>
+						  <td style="text-align: center; vertical-align: middle;"><img class="maridaje" src="https://gatonegro.sclnt.cl/img_botellas/icon_carne.png" width="10%" /><img class="maridaje" src="https://gatonegro.sclnt.cl/img_botellas/icon_queso.png" width="10%" /></td>
+							  <td></td>
+						</tr>
+					  </tbody>
+					</table><br>
+			</div>
+			
+        </div>
+    </div>
+	<!--fin RESULTADO Cabernet Sauvignon-->
     </body> 
     </html> 
     '; 
 
     $headers = "MIME-Version: 1.0\r\n";
     $headers.= "Content-type: text/html; charset=iso-8859-1\r\n";
-    $headers.= 'Bcc: jose@suculenta.cl' . "\r\n";
+    $headers.= 'Bcc: subliminalmeunospam@gmail.com' . "\r\n";
     $headers.= "From:" . $from;
 
     mail($to,$subject,$message, $headers);
