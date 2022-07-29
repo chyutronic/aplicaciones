@@ -23,84 +23,95 @@
         </header>
 		<img src="img_pp/embrace.png" width="50%" />
         <br>
-        <a href="#parada1"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>
+        <a id="openP0" href="javascript:mostrarPreguntas()"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>
 		<img class="cepas" src="img_pp/cepas.png" />
 		<img class="intro_foto_costado" src="img_pp/intro_foto_costado.png" />
 	</div>
     <!-- fin slide intro-->
 
-
-	<div class="container">
-		<div id="parada1"></div>
-        <section id="p0">
-            <!-- <h3 class="pregunta">1.- ¿Qué tipo de vino te gusta?</h3> -->
-            <img class="imgPregunta" src="img_pp/P1.png"/>
-            <br>
-            <br>
-            <label>
-                <input id="p0.1" type="radio" value="1" name="p0" onclick="respuesta(0, this); document.getElementById('p0.2').disabled=true; document.getElementById('p0.3').disabled=true"> 
-                a) Suaves y frutales
-            </label>
-            <label>
-                <input id="p0.2" type="radio" value="2" name="p0" onclick="respuesta(0, this); document.getElementById('p0.1').disabled=true; document.getElementById('p0.3').disabled=true"> 
-                b) Ácidos y frescos
-            </label>
-            <label>
-                <input id="p0.3" type="radio" value="3" name="p0" onclick="respuesta(0, this); document.getElementById('p0.1').disabled=true; document.getElementById('p0.2').disabled=true"> 
-                c) Intensos y frutales
-          </label>
-            <br>
-            <a href="#parada2">
-			<img class="siguiente" src="img_pp/boton_siguiente.png"/>
-            </a>
-        </section>
-			
-		<div id="parada2"></div>
-        <section id="p1">
-            <!-- <h3 class="pregunta">2.- ¿Con qué comida te gusta tomarlo?</h3> -->
-            <img class="imgPregunta" src="img_pp/P2.png"/>
-            <br>
-            <br>
-            <label>
-                <input id="p1.1" type="radio" value="1" name="p1" onclick="respuesta(1, this); document.getElementById('p1.2').disabled=true; document.getElementById('p1.3').disabled=true"> 
-                a) Pescado
-            </label>
-            <label>
-                <input id="p1.2" type="radio" value="2" name="p1" onclick="respuesta(1, this); document.getElementById('p1.1').disabled=true; document.getElementById('p1.3').disabled=true"> 
-                b) Pastas</label>
-            <label>
-                <input id="p1.3" type="radio" value="3" name="p1" onclick="respuesta(1, this); document.getElementById('p1.1').disabled=true; document.getElementById('p1.2').disabled=true"> 
-                c) Carnes</label>
-            <br>
-            <a href="#parada3">
-            <img class="siguiente" src="img_pp/boton_siguiente.png"/>
-            </a>
-        </section>
-			
-		<div id="parada3"></div>
-        <section id="p2">
-            <!-- <h3 class="pregunta">3.- ¿En qué comida del día?</h3> -->
-            <img class="imgPregunta" src="img_pp/P3.png"/>
-            <br>
-            <br>
-            <label>
-                <input id="p2.1" type="radio" value="1" name="p2" onclick="respuesta(2, this); document.getElementById('p2.2').disabled=true; document.getElementById('p2.3').disabled=true; consultar()">
-                a) Tarde con amigos         </label>
-            <label>
-                <input id="p2.2" type="radio" value="2" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.3').disabled=true; consultar()">
-            b) Cena con tu pareja o famila         </label>
-            <label>
-                <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true; consultar()"> 
-                c) Celebración
-            </label>
-            <br>
-        <div  align="center">
-          <!--<a id="open"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>-->
-		  <a id="open"><img class="botonPresioname" src="img_pp/boton_presioname.png" alt=""/></a> </div>
-
-        </section>
-        <br>
+    <div class="modal_container" id="modal_container_P0">
+        <div class="modal">
+	<!-- <div class="container">
+		<div id="parada1"></div> -->
+            <section id="p0">
+                <!-- <h3 class="pregunta">1.- ¿Qué tipo de vino te gusta?</h3> -->
+                <img class="imgPregunta" src="img_pp/P1.png"/>
+                <br>
+                <br>
+                <label>
+                    <input id="p0.1" type="radio" value="1" name="p0" onclick="respuesta(0, this); document.getElementById('p0.2').disabled=true; document.getElementById('p0.3').disabled=true; mostrarPreguntas()"> 
+                    a) Suaves y frutales
+                </label>
+                <label>
+                    <input id="p0.2" type="radio" value="2" name="p0" onclick="respuesta(0, this); document.getElementById('p0.1').disabled=true; document.getElementById('p0.3').disabled=true; mostrarPreguntas()"> 
+                    b) Ácidos y frescos
+                </label>
+                <label>
+                    <input id="p0.3" type="radio" value="3" name="p0" onclick="respuesta(0, this); document.getElementById('p0.1').disabled=true; document.getElementById('p0.2').disabled=true; mostrarPreguntas()"> 
+                    c) Intensos y frutales
+                </label>
+                <br>
+                <a id="openP1" href="#parada2">
+                <img class="siguiente" src="img_pp/boton_siguiente.png"/>
+                </a>
+            </section>
+        </div>
     </div>
+
+    <div class="modal_container" id="modal_container_P1">
+        <div class="modal">
+		<!-- <div id="parada2"></div> -->
+            <section id="p1">
+                <!-- <h3 class="pregunta">2.- ¿Con qué comida te gusta tomarlo?</h3> -->
+                <img class="imgPregunta" src="img_pp/P2.png"/>
+                <br>
+                <br>
+                <label>
+                    <input id="p1.1" type="radio" value="1" name="p1" onclick="respuesta(1, this); document.getElementById('p1.2').disabled=true; document.getElementById('p1.3').disabled=true; mostrarPreguntas()"> 
+                    a) Pescado
+                </label>
+                <label>
+                    <input id="p1.2" type="radio" value="2" name="p1" onclick="respuesta(1, this); document.getElementById('p1.1').disabled=true; document.getElementById('p1.3').disabled=true; mostrarPreguntas()"> 
+                    b) Pastas</label>
+                <label>
+                    <input id="p1.3" type="radio" value="3" name="p1" onclick="respuesta(1, this); document.getElementById('p1.1').disabled=true; document.getElementById('p1.2').disabled=true; mostrarPreguntas()"> 
+                    c) Carnes</label>
+                <br>
+                <a id="openP2" href="#parada3">
+                <img class="siguiente" src="img_pp/boton_siguiente.png"/>
+                </a>
+            </section>
+        </div>
+    </div>		
+
+    <div class="modal_container" id="modal_container_P2">
+        <div class="modal">
+		<!-- <div id="parada3"></div> -->
+            <section id="p2">
+                <!-- <h3 class="pregunta">3.- ¿En qué comida del día?</h3> -->
+                <img class="imgPregunta" src="img_pp/P3.png"/>
+                <br>
+                <br>
+                <label>
+                    <input id="p2.1" type="radio" value="1" name="p2" onclick="respuesta(2, this); document.getElementById('p2.2').disabled=true; document.getElementById('p2.3').disabled=true; consultar()">
+                    a) Tarde con amigos         </label>
+                <label>
+                    <input id="p2.2" type="radio" value="2" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.3').disabled=true; consultar()">
+                b) Cena con tu pareja o famila         </label>
+                <label>
+                    <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true; consultar()"> 
+                    c) Celebración
+                </label>
+                <br>
+                <div  align="center">
+                    <!--<a id="open"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>-->
+                    <a id="open"><img class="botonPresioname" src="img_pp/boton_presioname.png" alt=""/></a> 
+                </div>
+            </section>
+        <br>
+        </div>
+    </div>
+
 
     <!-- Div para hacer la ventana modal -->
 <!--inicio RESULTADO Cabernet Sauvignon-->

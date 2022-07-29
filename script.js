@@ -1,11 +1,19 @@
 // código para usar la ventana modal
 
 const open = document.getElementById('open');
+const openP0 = document.getElementById('openP0');
+const openP1 = document.getElementById('openP1');
+const openP2 = document.getElementById('openP2');
+
 const modal_container_CS = document.getElementById('modal_container_CS');
 const modal_container_ME = document.getElementById('modal_container_ME');
 const modal_container_CA = document.getElementById('modal_container_CA');
 const modal_container_SB = document.getElementById('modal_container_SB');
 const modal_container28 = document.getElementById('modal_container28');
+
+const modal_container_P0 = document.getElementById('modal_container_P0');
+const modal_container_P1 = document.getElementById('modal_container_P1');
+const modal_container_P2 = document.getElementById('modal_container_P2');
 
 
 // arreglo que contiene las respuestas con combinaciones posibles: 3^3=27 combinaciones posibles
@@ -51,6 +59,24 @@ function respuesta(numPregunta, seleccionada){
 }// fin método respuesta
 
 
+// función para hacer aparecer las ventanas modales con las preguntas por separado
+function mostrarPreguntas(){
+
+    openP0.addEventListener('click', () => {
+        modal_container_P0.classList.add('show');
+    });
+
+    openP1.addEventListener('click', () => {
+        modal_container_P1.classList.add('show');
+    });
+
+    openP2.addEventListener('click', () => {
+        modal_container_P2.classList.add('show');
+    });
+
+}
+
+
 // función que toma las respuestas y lo compara con los arreglos con combinaciones posibles y entrega el vino correcto
 function consultar(){
 
@@ -91,6 +117,8 @@ function cerrarVentanaModal(){
 
 }// fin función cerrar
 
+
+window.onload = mostrarPreguntas;
 
 
 

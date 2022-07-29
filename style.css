@@ -117,8 +117,11 @@ button:hover{
 
 /** PEPE **/
 
-.botonPresioname{width: 80%;
-height: auto;}
+.botonPresioname{
+width: 250px;
+height: 250px;
+}
+
 
 header{ 
     position: sticky;
