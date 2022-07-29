@@ -98,21 +98,17 @@ button{
 }
 
 .siguiente{
-    
-   
     width: 50%;
     display: block;
     margin: auto;
     padding: auto;
-
- 
 }
+
 
 button:hover{
     background: #4459d4;
     color: #fff;
 }
-
 
 
 /** PEPE **/
@@ -194,8 +190,7 @@ top{
     align-items: center;
     justify-content: center;
     position: fixed;
-   /*pointer-events: none; se lo saque porque no deja cliquear en campo de mails*/
-	pointer-events: none;
+    pointer-events: none;
     top: 0;
     left: 0;
    height: 100vh;
