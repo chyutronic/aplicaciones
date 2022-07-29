@@ -104,7 +104,7 @@
 
     <!-- Div para hacer la ventana modal -->
 <!--inicio RESULTADO Cabernet Sauvignon-->
-    <div class="modal_container" id="modal_container1">
+    <div class="modal_container" id="modal_container_CS">
         <div class="modal">
 			<div class="kv_container" align="center">
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
@@ -122,16 +122,17 @@
 					  </tbody>
 					</table><br>
 			</div>
-			<form method="post" action="enviarMail.php">
+			<form method="post" action="enviarMailCS.php">
 				  <input type="email" id="email" name="email">
 				  <input type="submit" class="botonEnviar">
 				</form>
-          <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
+          <!-- <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> -->
         </div>
     </div>
 	<!--fin RESULTADO Cabernet Sauvignon-->
+    
     <!--inicio RESULTADO Merlot-->
-    <div class="modal_container" id="modal_container2">
+    <div class="modal_container" id="modal_container_ME">
         <div class="modal">
 			<div class="kv_container" align="center">
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
@@ -149,16 +150,17 @@
 					  </tbody>
 					</table><br>
 			</div>
-			<form method="post" action="enviarMail.php">
+			<form method="post" action="enviarMailME.php">
 				  <input type="email" id="email" name="email">
 				  <input type="submit" class="botonEnviar">
 				</form>
-          <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
+          <!-- <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> -->
         </div>
     </div>
 	<!--fin RESULTADO Merlot-->
+
     <!--inicio RESULTADO Carmenere-->
-    <div class="modal_container" id="modal_container3">
+    <div class="modal_container" id="modal_container_CA">
         <div class="modal">
 			<div class="kv_container" align="center">
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
@@ -176,16 +178,17 @@
 					  </tbody>
 					</table><br>
 			</div>
-			<form method="post" action="enviarMail.php">
+			<form method="post" action="enviarMailCA.php">
 				  <input type="email" id="email" name="email">
 				  <input type="submit" class="botonEnviar">
 				</form>
-          <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
+          <!-- <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> -->
         </div>
     </div>
 	<!--fin RESULTADO Carmenere-->
+
     <!--inicio RESULTADO Sauvignon Blanc-->
-    <div class="modal_container" id="modal_container4">
+    <div class="modal_container" id="modal_container_SB">
         <div class="modal">
 			<div class="kv_container" align="center">
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
@@ -203,36 +206,23 @@
 					  </tbody>
 					</table><br>
 			</div>
-			<form method="post" action="enviarMail.php">
+			<form method="post" action="enviarMailSB.php">
 				  <input type="email" id="email" name="email">
 				  <input type="submit" class="botonEnviar">
 				</form>
-          <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
+          <!-- <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> -->
         </div>
     </div>
 	<!--fin RESULTAD Sauvignon Blanc-->
-    <!-- <div class="modal_container" id="modal_container5">
-        <div class="modal">
-            <h1>Felicitaciones..!</h1>
-            <img src="img/sanPedro5.jpg" height="650px"/> 
-            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close5">X</button>
-        </div>
-    </div>
-    <div class="modal_container" id="modal_container6">
-        <div class="modal">
-            <h1>Felicitaciones..!</h1>
-            <img src="img/sanPedro6.jpg" height="650px"/> 
-            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close6">X</button>
-        </div>
+
     </div>
     <div class="modal_container" id="modal_container28">
         <div class="modal">
-            <h1>Felicitaciones..!</h1> -->
-            <!-- <img src="img/vuelvaIntentarlo.jpg" height="650px"/> 
+            <h1>Lo lamentamos..!</h1>
+            <img src="img/vuelvaIntentarlo.jpg" height="650px"/> 
             <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close28">X</button>
         </div>
-    </div> -->
-
+    </div>
 
     <!-- FIN Div para hacer la ventana modal -->
 
@@ -242,8 +232,3 @@
 
 </body>
 </html>
-
-
-<!-- href="javascript:consultar()" -->
-
-<!-- href="php:guardarBBDD()" -->

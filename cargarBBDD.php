@@ -18,7 +18,7 @@
 
     $conexion = mysqli_connect($db_host, $db_usuario, $db_contrasena, $db_nombre);
 
-    $ingreso = "INSERT INTO consultas_realizadas VALUES ('2019-08-29', 'gonzalo@suculenta.cl', 'SB');";
+    $ingreso = "INSERT INTO consultas_realizadas VALUES ('NOW()', $to, 'CS');";
 
     mysqli_query($conexion, $ingreso);
 

@@ -1,29 +1,42 @@
 // código para usar la ventana modal
 
 const open = document.getElementById('open');
-const modal_container1 = document.getElementById('modal_container1');
-const close1 = document.getElementById('close1');
-const modal_container2 = document.getElementById('modal_container2');
-const close2 = document.getElementById('close1');
-const modal_container3 = document.getElementById('modal_container3');
-const close3 = document.getElementById('close1');
-const modal_container4 = document.getElementById('modal_container4');
-const close4 = document.getElementById('close1');
-const modal_container5 = document.getElementById('modal_container5');
-const close5 = document.getElementById('close1');
-const modal_container6 = document.getElementById('modal_container6');
-const close6 = document.getElementById('close1');
+const modal_container_CS = document.getElementById('modal_container_CS');
+const modal_container_ME = document.getElementById('modal_container_ME');
+const modal_container_CA = document.getElementById('modal_container_CA');
+const modal_container_SB = document.getElementById('modal_container_SB');
 const modal_container28 = document.getElementById('modal_container28');
-const close28 = document.getElementById('close1');
 
 
-// arreglo que contiene las respuestas con combinaciones posibles
+// arreglo que contiene las respuestas con combinaciones posibles: 3^3=27 combinaciones posibles
+
 let op1 = ["1", "1", "1"];
-let op2 = ["2", "2", "2"];
-let op3 = ["3", "3", "3"];
-let op4 = ["1", "2", "3"];
-let op5 = ["3", "2", "1"];
-let op6 = ["1", "1", "2"];
+let op2 = ["1", "1", "2"];
+let op3 = ["1", "1", "3"];
+let op4 = ["1", "2", "1"];
+let op5 = ["1", "2", "2"];
+let op6 = ["1", "2", "3"];
+let op7 = ["1", "3", "1"];
+let op8 = ["1", "3", "2"];
+let op9 = ["1", "3", "3"];
+let op10 = ["2", "1", "1"];
+let op11 = ["2", "1", "2"];
+let op12 = ["2", "1", "3"];
+let op13 = ["2", "2", "1"];
+let op14 = ["2", "2", "2"];
+let op15 = ["2", "2", "3"];
+let op16 = ["2", "3", "1"];
+let op17 = ["2", "3", "2"];
+let op18 = ["2", "3", "3"];
+let op19 = ["3", "1", "1"];
+let op20 = ["3", "1", "2"];
+let op21 = ["3", "1", "3"];
+let op22 = ["3", "2", "1"];
+let op23 = ["3", "2", "2"];
+let op24 = ["3", "2", "3"];
+let op25 = ["3", "3", "1"];
+let op26 = ["3", "3", "2"];
+let op27 = ["3", "3", "3"];
 
 
 // arreglo donde se guardan las respuestas del usuario
@@ -41,37 +54,27 @@ function respuesta(numPregunta, seleccionada){
 // función que toma las respuestas y lo compara con los arreglos con combinaciones posibles y entrega el vino correcto
 function consultar(){
 
-    if(JSON.stringify(op1) === JSON.stringify(opcionElegida)){
+    if([JSON.stringify(op7), JSON.stringify(op8), JSON.stringify(op9), JSON.stringify(op25), JSON.stringify(op26), JSON.stringify(op27)].includes(JSON.stringify(opcionElegida))){
         open.addEventListener('click', () => {
-            modal_container1.classList.add('show');
+            modal_container_CS.classList.add('show');
         });
     }
-    else if(JSON.stringify(op2) === JSON.stringify(opcionElegida)){
+    else if([JSON.stringify(op13), JSON.stringify(op14), JSON.stringify(op15), JSON.stringify(op19), JSON.stringify(op20), JSON.stringify(op21), JSON.stringify(op22), JSON.stringify(op23), JSON.stringify(op24)].includes(JSON.stringify(opcionElegida))){
         open.addEventListener('click', () => {
-            modal_container2.classList.add('show');
+            modal_container_ME.classList.add('show');
         });
     }
-    else if(JSON.stringify(op3) === JSON.stringify(opcionElegida)){
+    else if([JSON.stringify(op4), JSON.stringify(op5), JSON.stringify(op6), JSON.stringify(op16), JSON.stringify(op17), JSON.stringify(op18)].includes(JSON.stringify(opcionElegida))){
         open.addEventListener('click', () => {
-            modal_container3.classList.add('show');
+            modal_container_CA.classList.add('show');
         });
     }
-    else if(JSON.stringify(op4) === JSON.stringify(opcionElegida)){
+    else if([JSON.stringify(op1), JSON.stringify(op2), JSON.stringify(op3), JSON.stringify(op10), JSON.stringify(op11), JSON.stringify(op12)].includes(JSON.stringify(opcionElegida))){
         open.addEventListener('click', () => {
-            modal_container4.classList.add('show');
+            modal_container_SB.classList.add('show');
         });
-    }
-    else if(JSON.stringify(op5) === JSON.stringify(opcionElegida)){
-        open.addEventListener('click', () => {
-            modal_container5.classList.add('show');
-        });
-    }
-    else if(JSON.stringify(op6) === JSON.stringify(opcionElegida)){
-        open.addEventListener('click', () => {
-            modal_container6.classList.add('show');
-        });
-    }
-    else{
+
+    }else{
         open.addEventListener('click', () => {
             modal_container28.classList.add('show');
         });
@@ -85,56 +88,6 @@ function cerrarVentanaModal(){
 
     window.scrollTo(0, 0);
     location.reload();
-
-    // if(JSON.stringify(op1) === JSON.stringify(opcionElegida)){
-    //     close1.addEventListener('click', () => {
-    //         modal_container1.classList.remove('show');
-    //         location.reload();
-    //         window.scrollTo(0, 0);
-    //     });
-    // }
-    // else if(JSON.stringify(op2) === JSON.stringify(opcionElegida)){
-    //     close2.addEventListener('click', () => {
-    //         modal_container2.classList.remove('show');
-    //         location.reload();
-    //         window.scrollTo(0, 0);
-    //     });
-    // }
-    // else if(JSON.stringify(op3) === JSON.stringify(opcionElegida)){
-    //     close3.addEventListener('click', () => {
-    //         modal_container3.classList.remove('show');
-    //         location.reload();
-    //         window.scrollTo(0, 0);
-    //     });
-    // }
-    // else if(JSON.stringify(op4) === JSON.stringify(opcionElegida)){
-    //     close4.addEventListener('click', () => {
-    //         modal_container4.classList.remove('show');
-    //         location.reload();
-    //         window.scrollTo(0, 0);
-    //     });
-    // }
-    // else if(JSON.stringify(op5) === JSON.stringify(opcionElegida)){
-    //     close5.addEventListener('click', () => {
-    //         modal_container5.classList.remove('show');
-    //         location.reload();
-    //         window.scrollTo(0, 0);
-    //     });
-    // }
-    // else if(JSON.stringify(op6) === JSON.stringify(opcionElegida)){
-    //     close6.addEventListener('click', () => {
-    //         modal_container6.classList.remove('show');
-    //         location.reload();
-    //         window.scrollTo(0, 0);
-    //     });
-    // }
-    // else{
-    //     close28.addEventListener('click', () => {
-    //         modal_container28.classList.remove('show');
-    //         location.reload();
-    //         window.scrollTo(0, 0);
-    //     });
-    // }
 
 }// fin función cerrar
 
