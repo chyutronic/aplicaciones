@@ -69,7 +69,9 @@
 
     //FIN código para insertar dato en base de datos
 
-    header("Location: http://gatonegro.suculenta.cl");
+    header("Location: http://gatonegro.sclnt.cl");
 
 ?>
+
+
 

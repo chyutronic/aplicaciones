@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GATONEGRO</title>
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style_off_.css">
 	<meta name="robots" content="noindex" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2MHX7PKHPR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2MHX7PKHPR');
+</script>
+
 </head>
 <body>
     
@@ -18,25 +29,26 @@
 	<div  align="center" class="intro">
 		<div id="parada0"></div>
 		<header id="top">
-        <br>
+        
         	<div align="center"><img class="logo" src="img/logogn.png" /></div>
-        <br>
+        
         </header>
 		<img src="img_pp/embrace.png" width="50%" />
         <br>
         <a id="openP0"><img class="comenzar" src="img_pp/boton_cualestucepa.png"/></a>
-		<!--<img class="cepas" src="img_pp/cepas.png" />-->
-		<img class="cepas" src="img_pp/cepas_vertical.png" />
-		<img class="intro_foto_costado" src="img_pp/intro_foto_costado_color_400px.png" />
+		<img class="cepas" src="img_pp/background.jpg" />
+		<!--<img class="cepas" src="img_pp/cepas_vertical.png" />
+		<img class="intro_foto_costado" src="img_pp/intro_foto_costado_color_400px.png" />-->
 	</div>
     <!-- fin slide intro-->
 
     <div class="modal_container" id="modal_container_P0">
-        <div class="modal">
+        <div class="modal" id="modal_background_P0">
 	<!-- <div class="container">
 		<div id="parada1"></div> -->
             <section id="p0">
                 <!-- <h3 class="pregunta">1.- ¿Qué tipo de vino te gusta?</h3> -->
+				<div align="center"><img class="logo_modal" src="img/logogn.png" /></div>
                 <div  align="center"><img class="imgPregunta" src="img_pp/P1.png"/></div>
                 <br>
                 <br>
@@ -57,14 +69,16 @@
                 <img class="siguiente" src="img_pp/boton_siguiente.jpg"/>
                 </a>
             </section>
+			<button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> 
         </div>
     </div>
 
     <div class="modal_container" id="modal_container_P1">
-        <div class="modal">
+        <div class="modal" id="modal_background_P1">
 		<!-- <div id="parada2"></div> -->
             <section id="p1">
                 <!-- <h3 class="pregunta">2.- ¿Con qué comida te gusta tomarlo?</h3> -->
+				<div align="center"><img class="logo_modal" src="img/logogn.png" /></div>
                 <div  align="center"><img class="imgPregunta" src="img_pp/P2.png"/></div>
                 <br>
                 <br>
@@ -83,38 +97,41 @@
                 <img class="siguiente" src="img_pp/boton_siguiente.jpg"/>
                 </a>
             </section>
+			<button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> 
         </div>
     </div>    
 			
     <div class="modal_container" id="modal_container_P2">
-        <div class="modal">
+        <div class="modal"  id="modal_background_P2">
 		<!-- <div id="parada3"></div> -->
             <section id="p2">
                 <!-- <h3 class="pregunta">3.- ¿En qué comida del día?</h3> -->
+				<div align="center"><img class="logo_modal" src="img/logogn.png" /></div>
                 <div  align="center"><img class="imgPregunta" src="img_pp/P3.png"/></div>
                 <br>
                 <br>
                 <label>
-                    <input id="p2.1" type="radio" value="1" name="p2" onclick="respuesta(2, this); document.getElementById('p2.2').disabled=true; document.getElementById('p2.3').disabled=true; consultar()">
+                    <input id="p2.1" type="radio" value="1" name="p2" onclick="respuesta(2, this); document.getElementById('p2.2').disabled=true; document.getElementById('p2.3').disabled=true">
                     a) Tarde con amigos         </label>
                 <label>
-                    <input id="p2.2" type="radio" value="2" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.3').disabled=true; consultar()">
+                    <input id="p2.2" type="radio" value="2" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.3').disabled=true">
                 b) Cena con tu pareja o famila         </label>
                 <label>
-                    <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true; consultar()"> 
+                    <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true"> 
                     c) Celebración
                 </label>
                 <br>
                 <div  align="center">
-                <a id="open"><img class="botonPresioname" src="/img_pp/boton_presioname_v2.png" alt=""/></a> 
+                <a href="javascript: consultar()" id="open"><img class="botonPresioname" src="/img_pp/boton_presioname_v3.png" alt=""/></a> 
                 </div>
             </section>
+			<button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> 
         </div>
     </div>
 
     <!-- Div para hacer la ventana modal -->
 <!--inicio RESULTADO Cabernet Sauvignon-->
-    <div class="modal_container" id="modal_container_CS">
+    <!-- <div class="modal_container" id="modal_container_CS">
         <div class="modal">
 			<div class="kv_container" align="center">
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
@@ -138,11 +155,11 @@
 				</form>
            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> 
         </div>
-    </div>
+    </div> -->
 	<!--fin RESULTADO Cabernet Sauvignon-->
     
     <!--inicio RESULTADO Merlot-->
-    <div class="modal_container" id="modal_container_ME">
+    <!-- <div class="modal_container" id="modal_container_ME">
         <div class="modal">
 			<div class="kv_container" align="center">
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
@@ -163,14 +180,14 @@
 			<form method="post" action="enviarMailME.php">
 				  <input type="email" id="email" name="email" placeholder="ingresar e-mail">
 				  <input type="submit" class="botonEnviar">
-				</form>
-         <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
+            </form>
+            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
         </div>
-    </div>
+    </div> -->
 	<!--fin RESULTADO Merlot-->
 
     <!--inicio RESULTADO Carmenere-->
-    <div class="modal_container" id="modal_container_CA">
+    <!-- <div class="modal_container" id="modal_container_CA">
         <div class="modal">
 			<div class="kv_container" align="center">
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
@@ -194,11 +211,11 @@
 				</form>
            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> 
         </div>
-    </div>
+    </div> -->
 	<!--fin RESULTADO Carmenere-->
 
     <!--inicio RESULTADO Sauvignon Blanc-->
-    <div class="modal_container" id="modal_container_SB">
+    <!-- <div class="modal_container" id="modal_container_SB">
         <div class="modal">
 			<div class="kv_container" align="center">
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
@@ -222,10 +239,9 @@
 				</form>
            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
         </div>
-    </div>
+    </div> -->
 	<!--fin RESULTAD Sauvignon Blanc-->
 
-    </div>
     <!--inicio RESULTADO ERROR-->
     <div class="modal_container" id="modal_container28" style="display: inherit;">
         <div class="modal" style="height: auto; width: auto;">
@@ -242,11 +258,29 @@
         </div>
     </div>
 	<!--fin RESULTADO ERROR-->
+	
+	<!--inicio RESULTADO ERROR-->
+    <div class="modal_container" id="modal_container29" style="display: inherit;">
+        <div class="modal" id="modal_29" style="height: auto; width: auto;">
+			<div class="kv_container" align="center">
+				<div align="center"><img class="icono_girar" src="img_pp/girar.png"/></div>
+			
+				<h2 style="color: #FFFFFF">poner dispositivo vertical</h2>
+				<!--<img class="iso" src="img/iso_gn.png"/>-->
+				
+			</div>
+			
+          <!--<button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3" style="right: 2%; top: 2%;">X</button>-->
+        </div>
+    </div>
+	<!--fin RESULTADO ERROR-->
+	
+	
     <!-- FIN Div para hacer la ventana modal -->
 
     <script src="script.js"></script>
 	 
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script_scr.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
 </body>
 </html>

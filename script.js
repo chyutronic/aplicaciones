@@ -5,10 +5,10 @@ const openP0 = document.getElementById('openP0');
 const openP1 = document.getElementById('openP1');
 const openP2 = document.getElementById('openP2');
 
-const modal_container_CS = document.getElementById('modal_container_CS');
-const modal_container_ME = document.getElementById('modal_container_ME');
-const modal_container_CA = document.getElementById('modal_container_CA');
-const modal_container_SB = document.getElementById('modal_container_SB');
+// const modal_container_CS = document.getElementById('modal_container_CS');
+// const modal_container_ME = document.getElementById('modal_container_ME');
+// const modal_container_CA = document.getElementById('modal_container_CA');
+// const modal_container_SB = document.getElementById('modal_container_SB');
 const modal_container28 = document.getElementById('modal_container28');
 
 const modal_container_P0 = document.getElementById('modal_container_P0');
@@ -81,24 +81,37 @@ function mostrarPreguntas(){
 function consultar(){
 
     if([JSON.stringify(op7), JSON.stringify(op8), JSON.stringify(op9), JSON.stringify(op25), JSON.stringify(op26), JSON.stringify(op27)].includes(JSON.stringify(opcionElegida))){
-        open.addEventListener('click', () => {
-            modal_container_CS.classList.add('show');
-        });
+
+        window.open("opcionCS.html" , "_self" , "scrollbars=NO")
+
+        // open.addEventListener('click', () => {
+        //     modal_container_CS.classList.add('show');
+        // });
     }
     else if([JSON.stringify(op13), JSON.stringify(op14), JSON.stringify(op15), JSON.stringify(op19), JSON.stringify(op20), JSON.stringify(op21), JSON.stringify(op22), JSON.stringify(op23), JSON.stringify(op24)].includes(JSON.stringify(opcionElegida))){
-        open.addEventListener('click', () => {
-            modal_container_ME.classList.add('show');
-        });
+
+        window.open("opcionME.html" , "_self" , "scrollbars=NO")
+
+        // open.addEventListener('click', () => {
+        //     modal_container_ME.classList.add('show');
+        // });
     }
     else if([JSON.stringify(op4), JSON.stringify(op5), JSON.stringify(op6), JSON.stringify(op16), JSON.stringify(op17), JSON.stringify(op18)].includes(JSON.stringify(opcionElegida))){
-        open.addEventListener('click', () => {
-            modal_container_CA.classList.add('show');
-        });
+        
+        window.open("opcionCA.html" , "_self" , "scrollbars=NO")
+
+        // open.addEventListener('click', () => {
+        //     modal_container_CA.classList.add('show');
+        // });
     }
+
     else if([JSON.stringify(op1), JSON.stringify(op2), JSON.stringify(op3), JSON.stringify(op10), JSON.stringify(op11), JSON.stringify(op12)].includes(JSON.stringify(opcionElegida))){
-        open.addEventListener('click', () => {
-            modal_container_SB.classList.add('show');
-        });
+
+        window.open("opcionSB.html" , "_self" , "scrollbars=NO")
+
+        // open.addEventListener('click', () => {
+        //     modal_container_SB.classList.add('show');
+        // });
 
     }else{
         open.addEventListener('click', () => {

@@ -19,6 +19,7 @@ header{
     max-width: 700px;
     margin: auto;
     padding: 20px;
+    text-align: center;
 }
 
 section{
@@ -40,11 +41,12 @@ section{
     padding: 7px;
 }
 
-.imgPregunta{width:100%;}
+.imgPregunta{width:80%;
+max-width: 600px;  }
 
 label{
     font-weight: bold;
-    font-size: 1.55em;
+    font-size: 1.2rem;
     background-color: #fff;
     display: block;
     padding: 7px;
@@ -104,7 +106,7 @@ button{
 .siguiente{
     
    
-    width: 50%;
+    width: 40%;
     display: block;
     margin: auto;
     padding: auto;
@@ -126,8 +128,8 @@ width: 50%;}
 
 
 .botonPresioname{
-width: 250px;
-height: 250px;
+	max-width: 400px;
+width: 70%;
 }
 
 
@@ -137,10 +139,10 @@ header{
 
 
 body {
-    background-image:url("img_pp/background.jpg");
+    /*background-image:url("img_pp/background.jpg");*/
 	background-size:     cover;                      /*<------*/
     background-repeat:   no-repeat;
-    background-position: top center;              /* optional, center the image */
+    background-position: bottom center;              /* optional, center the image */
 	margin:0px;  
 }
 
@@ -150,10 +152,13 @@ body {
     background-repeat:   no-repeat;
     background-position: bottom center;              /* optional, center the image */
 	height: 100vh;
-	min-height: 800px;
+	/*min-height: 800px;*/
 	margin:0px;
 	/**height: 1200px;**/
     /*background-color:#FFFFFF ;*/
+	min-height: fill-available;
+    min-height: -webkit-fill-available;
+	overflow: hidden;
 }
 
 top{
@@ -176,6 +181,13 @@ top{
 	max-width: 472px;
 	
 }
+
+.logo_modal{
+    margin-top: 2%;
+	width: 70%;
+	max-width: 472px;
+	
+}
 		
 
 
@@ -183,10 +195,9 @@ top{
     position:absolute;
     /*left: 5%; esta es cuando está abajo*/
 	left: 0px;
-    bottom: 0;
-    width:25%;
-	z-index: -2;
-	max-width: 196px;}
+    bottom: 0px;
+    width:100%;
+	z-index: -2;}
 
 
 .intro_foto_costado{
@@ -200,6 +211,14 @@ top{
 
 
 /* Estilos ventana modal */
+
+/*GIRAR PANTALLA*/
+#modal_container29{ opacity: 0;
+background-color: black;}
+#modal_29{background-color: black;}
+.icono_girar {max-width: 198px;
+				width: 70%}
+/*FIN GIRAR PANTALLA*/
 
 .modal_container{
     display: flex;
@@ -238,6 +257,31 @@ top{
 .modal h1{
     margin: 0;
 }
+/* FONDOS MODALES */
+#modal_background_P0{background-image:url("img_pp/background2.jpg");
+	background-size:     cover;                      /*<------*/
+    background-repeat:   no-repeat;
+    background-position: top center;              /* optional, center the image */
+	margin:0px; 
+    height: 92%;}
+
+#modal_background_P1{background-image:url("img_pp/background3.jpg");
+	background-size:     cover;                      /*<------*/
+    background-repeat:   no-repeat;
+    background-position: top center;              /* optional, center the image */
+	margin:0px; 
+    height: 92%;}
+
+#modal_background_P2{background-image:url("img_pp/background4.jpg");
+	background-size:     cover;                      /*<------*/
+    background-repeat:   no-repeat;
+    background-position: top center;              /* optional, center the image */
+	margin:0px; 
+    height: 92%;}
+
+
+
+
 
 /* .botonEnviar{ */
     
@@ -254,7 +298,7 @@ top{
 
 /** CSS PREMIOS **/
 .logoPremio{
-    margin-top: 0px;
+    margin-top: 30px;
 	width: 60%;
 }
 .botella_premio {    width:80%;
@@ -293,73 +337,16 @@ line-height : 1.1rem;}
 
 
 @media only screen 
+and (max-device-width: 800px) /*se lo agregué para evitar problemas con la tblet y el teclado)*/
 and (orientation : landscape) {
-.intro_foto_costado{
-	width: 20%;
-	max-height:inherit;
-	max-width: 400px;
-	bottom: -12%;}
+	#modal_container29{ opacity: 1;
 	
-.botonPresioname{width: 50%;
-height: auto;}
 	
-.siguiente{
-  width: 30%;
- 
-}
-
-.imgPregunta{width:70%;
-	 }
 	
-.botella_premio {
-	width:10%;
-	max-height: 420px;
-	max-width: 442px;
-
-}
 	
-
-.modal{
-    
-    height: 90%;
-}
-.maridaje{margin: auto;
-width: 10%;}
-p{max-width: 50%;}
-
-td{text-align:center;}
-
-
-.logoPremio{
-    margin-top: 0px;
-	width: 30%;
-}
-
-
-.logo{
-    margin-top: 1%;
-	width: 40%;
 	
-}
-
-
-.comenzar {margin-top: 1%;
-           width: 30%;}
-	
-/* .cepas{
-    
-    
-} */
-section{
-    padding: 10% 5% 50% 5%;
-    margin: 10px 0;
-}
-	
-.botonVeCualestucepa{
-    
-    width: 40%;
-}
 	}
+}
 
 /** FIN SI ES QUE SE PONE HORIZONTAL **/
 /** PANTALLAS MÁS ANTIGUAS*/
@@ -380,6 +367,14 @@ and (max-device-width : 667px) {
 @media only screen 
 	and (orientation: portrait) 
 	and (min-width: 768px) { 
+		
+		
+label{
+    
+    font-size: 2rem;
+		}	
+		
+		
 .kv_container p{
 	max-width: 65%;
 	font-size: 1.6rem;
@@ -400,48 +395,23 @@ and (max-device-width : 667px) {
 	margin: auto;
 	width: 30%;
 	max-width: 80px;}
+
+.logo_modal{
+    margin-top: 2%;
+	width: 60%;
+	max-width: 472px;
+	
+}
+		
+		
+		
 }
 /** para tablet horizontal*/
 @media only screen 
 	and (orientation: landscape) 
 	and (min-width: 768px) { 
-
-.botonPresioname{width: 75%;
-height: auto;}
-		
-.botella_premio {
-	width:30%;
-	max-height: 420px;
-	max-width: 442px;
-}
-	
-.modal{
-    height: 90%;
-}
-		
-.maridaje{margin: auto;
-width: 30%;}
-		
-.kv_container p{
-	max-width: 65%;
-	font-size: 1.2rem;
-	padding-bottom: 1rem;
-	line-height : 1.2rem;}
-		
-.kv_container b{font-size: 1.2rem;}
-		
-.logoPremio{
-    margin-top: 2%;
-	width: 40%;
-}
-
-.kv_container h2{
-	padding: 0px;
-	padding-bottom: 1rem;
-	max-width: 90%;
-	margin: 0px;
-	font-size: 2.2rem;
-	line-height : 2.2rem;}
+		.icono_girar {padding-top: 20%; max-width: 198px;
+				width: 100%}
 
 
 }
