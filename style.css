@@ -58,9 +58,9 @@ label{
     margin-bottom: 3px;
 }
 
-label:hover{
+/* label:hover{
     background: #5769d3be;
-}
+} */
 
 .redondo{
     font-weight: bold;
@@ -213,11 +213,19 @@ top{
 /* Estilos ventana modal */
 
 /*GIRAR PANTALLA*/
-#modal_container29{ opacity: 0;
-background-color: black;}
-#modal_29{background-color: black;}
-.icono_girar {max-width: 198px;
-				width: 70%}
+#modal_container29{ 
+opacity: 0;
+background-color: black;
+}
+
+#modal_29{
+background-color: black;
+}
+
+.icono_girar{
+max-width: 198px;
+width: 70%
+}
 /*FIN GIRAR PANTALLA*/
 
 .modal_container{
@@ -278,10 +286,6 @@ background-color: black;}
     background-position: top center;              /* optional, center the image */
 	margin:0px; 
     height: 92%;}
-
-
-
-
 
 /* .botonEnviar{ */
     
