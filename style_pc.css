@@ -1,0 +1,90 @@
+@import url("style.css");
+
+
+/* Estilos ventana modal */
+
+/*GIRAR PANTALLA*/
+#modal_container29{ 
+opacity: 0;
+background-color: black;
+}
+
+section{
+ 
+	padding: 5% 15% 80% 15%;
+}
+
+.logo{
+    margin-top: 10%;
+	width: 40%;
+	max-width: 472px;
+	
+}
+
+.comenzar{
+    margin-top: 2%;
+    width: 25%;
+}
+
+.cepas{
+    position:absolute;
+    /*left: 5%; esta es cuando está abajo*/
+	left: 0px;
+    bottom: 0px;
+    width:100%;
+	z-index: -2;
+display:inherit;}
+
+
+
+
+/*VERTICAL*/
+
+/** para tablet*/
+@media only screen 
+	and (orientation: portrait) 
+	{ 
+
+		
+.comenzar{
+    margin-top: 15%;
+    width: 40%;
+}
+		
+label{
+    font-size: 1.2rem;
+}	
+		
+		
+.kv_container p{
+	max-width: 80%;
+	font-size: 1.2rem;
+	padding-bottom: 0rem;
+	line-height : 1.2rem;
+}
+
+.kv_container h2{
+	padding: 0px;
+	padding-bottom: 1rem;
+	max-width: 95%;
+	margin: 0px;
+	font-size: 2.5rem;
+	line-height : 2.5rem;
+}
+
+.kv_container b{
+    font-size: 1.2rem;
+}
+
+.maridaje{
+	margin: auto;
+	width: 30%;
+	max-width: 50px;
+}
+
+.logo_modal{
+    margin-top: 5%;
+	width: 85%;
+	max-width: 472px;
+}
+}

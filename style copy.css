@@ -19,7 +19,6 @@ header{
     max-width: 700px;
     margin: auto;
     padding: 20px;
-    /*text-align: center;*/
 }
 
 section{
@@ -28,7 +27,7 @@ section{
     border: 0px solid #29272e;
     border-radius: 7px;
     /*padding: 60% 5%;*/
-	padding: 12% 5% 70% 5%;
+	padding: 20% 5% 70% 5%;
     margin: 10px 0;
 }
 
@@ -58,9 +57,9 @@ label{
     margin-bottom: 3px;
 }
 
-/*label:hover{
+label:hover{
     background: #5769d3be;
-}*/
+}
 
 .redondo{
     font-weight: bold;
@@ -128,7 +127,7 @@ width: 50%;}
 
 
 .botonPresioname{
-max-width: 400px;
+	max-width: 400px;
 width: 70%;
 }
 
@@ -213,19 +212,11 @@ top{
 /* Estilos ventana modal */
 
 /*GIRAR PANTALLA*/
-#modal_container29{ 
-opacity: 0;
-background-color: black;
-}
-
-#modal_29{
-background-color: black;
-}
-
-.icono_girar{
-max-width: 198px;
-width: 70%
-}
+#modal_container29{ opacity: 0;
+background-color: black;}
+#modal_29{background-color: black;}
+.icono_girar {max-width: 198px;
+				width: 70%}
 /*FIN GIRAR PANTALLA*/
 
 .modal_container{
@@ -238,7 +229,7 @@ width: 70%
 	pointer-events: none;
     top: 0;
     left: 0;
-    height: 100vh;
+   height: 100vh;
     width: 100vw;
     opacity: 0;
 	/*cambiar valor a 0*/
@@ -258,7 +249,7 @@ width: 70%
     padding: 10px 10px 50px;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align:left;
+    text-align: center;
     opacity: 1;
 }
 
@@ -286,6 +277,10 @@ width: 70%
     background-position: top center;              /* optional, center the image */
 	margin:0px; 
     height: 92%;}
+
+
+
+
 
 /* .botonEnviar{ */
     
@@ -337,95 +332,85 @@ line-height : 1.1rem;}
 
 .kv_container strong{font-size: 0.6rem;}
 
-.form_container {height:auto; 
-    margin:0 auto; 
-    border:0px solid blue;}
-
-form{
-     border:0px solid red;
-    width:75%; 
-    margin:0 auto;
-    text-align:center;
-}
-
 /** SI ES QUE SE PONE HORIZONTAL  **/
 
+
 @media only screen 
-/* and (max-device-width: 800px) se lo agregué para evitar problemas con la tablet y el teclado) */
-and (orientation: landscape){
-	#modal_container29{ 
-        opacity: 1;
+and (max-device-width: 800px) /*se lo agregué para evitar problemas con la tblet y el teclado)*/
+and (orientation : landscape) {
+	#modal_container29{ opacity: 1;
+	
+	
+	
+	
+	
 	}
 }
 
 /** FIN SI ES QUE SE PONE HORIZONTAL **/
-
-
 /** PANTALLAS MÁS ANTIGUAS*/
 @media only screen 
 and (orientation: portrait)  
-and (min-device-width: 375px) 
-and (max-device-width: 667px){ 
-.botella_premio{
-    width:60%;
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+.botella_premio {
+		    width:60%;
 	max-height: 420px;
 	max-width: 442px;
-    }
+
 }
+	}
 
 
 /** para tablet*/
 @media only screen 
 	and (orientation: portrait) 
-	and (min-width: 768px){ 
-
+	and (min-width: 768px) { 
 		
-
+		
 label{
-    font-size: 1.5rem;
-}	
+    
+    font-size: 2rem;
+		}	
 		
 		
 .kv_container p{
-	max-width: 80%;
-	font-size: 1.2rem;
-	padding-bottom: 0rem;
-	line-height : 1.2rem;
-}
+	max-width: 65%;
+	font-size: 1.6rem;
+	padding-bottom: 2rem;
+	line-height : 1.6rem;}
 
 .kv_container h2{
 	padding: 0px;
-	padding-bottom: 1rem;
-	max-width: 95%;
+	padding-bottom: 2rem;
+	max-width: 90%;
 	margin: 0px;
-	font-size: 2.5rem;
-	line-height : 2.5rem;
-}
+	font-size: 3rem;
+	line-height : 3rem;}
 
-.kv_container b{
-    font-size: 1.2rem;
-}
+.kv_container b{font-size: 1.6rem;}
 
 .maridaje{
 	margin: auto;
 	width: 30%;
-	max-width: 50px;
-}
+	max-width: 80px;}
 
 .logo_modal{
     margin-top: 2%;
 	width: 60%;
 	max-width: 472px;
+	
 }
+		
+		
+		
 }
-
 /** para tablet horizontal*/
 @media only screen 
 	and (orientation: landscape) 
-	and (min-width: 768px){ 
-		.icono_girar{
-            padding-top: 20%; 
-            max-width: 198px;
-            width: 100%;
-    }
+	and (min-width: 768px) { 
+		.icono_girar {padding-top: 20%; max-width: 198px;
+				width: 100%}
+
+
 }

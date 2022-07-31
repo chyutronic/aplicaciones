@@ -80,6 +80,8 @@ function mostrarPreguntas(){
 // función que toma las respuestas y lo compara con los arreglos con combinaciones posibles y entrega el vino correcto
 function consultar(){
 
+    // console.log(opcionElegida);
+
     if([JSON.stringify(op7), JSON.stringify(op8), JSON.stringify(op9), JSON.stringify(op25), JSON.stringify(op26), JSON.stringify(op27)].includes(JSON.stringify(opcionElegida))){
 
         window.open("opcionCS.html" , "_self" , "scrollbars=NO")

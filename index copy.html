@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GATONEGRO</title>
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style_off_.css">
 	<meta name="robots" content="noindex" />
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MHX7PKHPR"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2MHX7PKHPR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2MHX7PKHPR');
-    </script>
+  gtag('config', 'G-2MHX7PKHPR');
+</script
 	
-	
-
-</head>
+></head>
 <body>
     
     <!--pepe <div class="titulo">
@@ -112,18 +111,18 @@
                 <br>
                 <br>
                 <label>
-                    <input id="p2.1" type="radio" value="1" name="p2" onclick="respuesta(2, this); document.getElementById('p2.2').disabled=true; document.getElementById('p2.3').disabled=true">
+                    <input id="p2.1" type="radio" value="1" name="p2" onclick="respuesta(2, this); document.getElementById('p2.2').disabled=true; document.getElementById('p2.3').disabled=true; consultar()">
                     a) Tarde con amigos         </label>
                 <label>
-                    <input id="p2.2" type="radio" value="2" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.3').disabled=true">
+                    <input id="p2.2" type="radio" value="2" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.3').disabled=true; consultar()">
                 b) Cena con tu pareja o famila         </label>
                 <label>
-                    <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true"> 
+                    <input id="p2.3" type="radio" value="3" name="p2" onclick="respuesta(2, this); document.getElementById('p2.1').disabled=true; document.getElementById('p2.2').disabled=true; consultar()"> 
                     c) Celebración
                 </label>
                 <br>
                 <div  align="center">
-                <a href="javascript: consultar()" id="open"><img class="botonPresioname" src="/img_pp/boton_presioname_v3.png" alt=""/></a> 
+                <a id="open"><img class="botonPresioname" src="/img_pp/boton_presioname_v3.png" alt=""/></a> 
                 </div>
             </section>
 			<button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> 
@@ -132,7 +131,7 @@
 
     <!-- Div para hacer la ventana modal -->
 <!--inicio RESULTADO Cabernet Sauvignon-->
-    <!-- <div class="modal_container" id="modal_container_CS">
+    <div class="modal_container" id="modal_container_CS">
         <div class="modal">
 			<div class="kv_container" align="center">
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
@@ -156,11 +155,11 @@
 				</form>
            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> 
         </div>
-    </div> -->
+    </div>
 	<!--fin RESULTADO Cabernet Sauvignon-->
     
     <!--inicio RESULTADO Merlot-->
-    <!-- <div class="modal_container" id="modal_container_ME">
+    <div class="modal_container" id="modal_container_ME">
         <div class="modal">
 			<div class="kv_container" align="center">
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
@@ -181,14 +180,14 @@
 			<form method="post" action="enviarMailME.php">
 				  <input type="email" id="email" name="email" placeholder="ingresar e-mail">
 				  <input type="submit" class="botonEnviar">
-            </form>
-            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
+				</form>
+         <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
         </div>
-    </div> -->
+    </div>
 	<!--fin RESULTADO Merlot-->
 
     <!--inicio RESULTADO Carmenere-->
-    <!-- <div class="modal_container" id="modal_container_CA">
+    <div class="modal_container" id="modal_container_CA">
         <div class="modal">
 			<div class="kv_container" align="center">
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
@@ -212,11 +211,11 @@
 				</form>
            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button> 
         </div>
-    </div> -->
+    </div>
 	<!--fin RESULTADO Carmenere-->
 
     <!--inicio RESULTADO Sauvignon Blanc-->
-    <!-- <div class="modal_container" id="modal_container_SB">
+    <div class="modal_container" id="modal_container_SB">
         <div class="modal">
 			<div class="kv_container" align="center">
 				<div align="center"><img class="logoPremio" src="img_botellas/tu_gn_es.png"/></div>
@@ -240,9 +239,10 @@
 				</form>
            <button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3">X</button>
         </div>
-    </div> -->
+    </div>
 	<!--fin RESULTAD Sauvignon Blanc-->
 
+    </div>
     <!--inicio RESULTADO ERROR-->
     <div class="modal_container" id="modal_container28" style="display: inherit;">
         <div class="modal" style="height: auto; width: auto;">
@@ -268,7 +268,9 @@
 			
 				<h2 style="color: #FFFFFF">poner dispositivo vertical</h2>
 				<!--<img class="iso" src="img/iso_gn.png"/>-->
+				
 			</div>
+			
           <!--<button onclick="cerrarVentanaModal()" class="botonCerrar" id="close3" style="right: 2%; top: 2%;">X</button>-->
         </div>
     </div>
@@ -279,14 +281,7 @@
 
     <script src="script.js"></script>
 	 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script>
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		$('link[rel="stylesheet"]').attr('href','style.css');
-	} else {
-		$('link[rel="stylesheet"]').attr('href','style_pc.css');
-	}
-	</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
 </body>
 </html>

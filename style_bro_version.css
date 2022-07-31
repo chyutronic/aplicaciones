@@ -4,6 +4,7 @@
 	font-size: 16px;
 }
 
+
 header{
     align-items: center;
 }
@@ -19,7 +20,7 @@ header{
     max-width: 700px;
     margin: auto;
     padding: 20px;
-    /*text-align: center;*/
+    text-align: center;
 }
 
 section{
@@ -28,7 +29,7 @@ section{
     border: 0px solid #29272e;
     border-radius: 7px;
     /*padding: 60% 5%;*/
-	padding: 12% 5% 70% 5%;
+	padding: 20% 5% 70% 5%;
     margin: 10px 0;
 }
 
@@ -58,9 +59,9 @@ label{
     margin-bottom: 3px;
 }
 
-/*label:hover{
+label:hover{
     background: #5769d3be;
-}*/
+}
 
 .redondo{
     font-weight: bold;
@@ -258,7 +259,7 @@ width: 70%
     padding: 10px 10px 50px;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align:left;
+    text-align: center;
     opacity: 1;
 }
 
@@ -337,16 +338,7 @@ line-height : 1.1rem;}
 
 .kv_container strong{font-size: 0.6rem;}
 
-.form_container {height:auto; 
-    margin:0 auto; 
-    border:0px solid blue;}
 
-form{
-     border:0px solid red;
-    width:75%; 
-    margin:0 auto;
-    text-align:center;
-}
 
 /** SI ES QUE SE PONE HORIZONTAL  **/
 
@@ -378,38 +370,38 @@ and (max-device-width: 667px){
 @media only screen 
 	and (orientation: portrait) 
 	and (min-width: 768px){ 
-
+}
 		
 
 label{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }	
 		
 		
 .kv_container p{
-	max-width: 80%;
-	font-size: 1.2rem;
-	padding-bottom: 0rem;
-	line-height : 1.2rem;
+	max-width: 65%;
+	font-size: 1.6rem;
+	padding-bottom: 2rem;
+	line-height : 1.6rem;
 }
 
 .kv_container h2{
 	padding: 0px;
-	padding-bottom: 1rem;
-	max-width: 95%;
+	padding-bottom: 2rem;
+	max-width: 90%;
 	margin: 0px;
-	font-size: 2.5rem;
-	line-height : 2.5rem;
+	font-size: 3rem;
+	line-height : 3rem;
 }
 
 .kv_container b{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .maridaje{
 	margin: auto;
 	width: 30%;
-	max-width: 50px;
+	max-width: 80px;
 }
 
 .logo_modal{
@@ -417,7 +409,7 @@ label{
 	width: 60%;
 	max-width: 472px;
 }
-}
+
 
 /** para tablet horizontal*/
 @media only screen 
