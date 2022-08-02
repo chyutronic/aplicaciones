@@ -54,7 +54,7 @@ let opcionElegida = [];
 // función que toma el número de pregunta y el imput elegido de esa pregunta
 function respuesta(numPregunta, seleccionada){
 
-    opcionElegida.splice(numPregunta,0,seleccionada.value);
+    opcionElegida.splice(numPregunta,1,seleccionada.value);
 
 }// fin método respuesta
 
@@ -82,7 +82,8 @@ function consultar(){
 
     // console.log(opcionElegida);
 
-    if([JSON.stringify(op7), JSON.stringify(op8), JSON.stringify(op9), JSON.stringify(op25), JSON.stringify(op26), JSON.stringify(op27)].includes(JSON.stringify(opcionElegida))){
+    
+    if([JSON.stringify(op7), JSON.stringify(op6), JSON.stringify(op25), JSON.stringify(op16), JSON.stringify(op22)].includes(JSON.stringify(opcionElegida))){
 
         window.open("opcionCS.html" , "_self" , "scrollbars=NO")
 
@@ -90,7 +91,7 @@ function consultar(){
         //     modal_container_CS.classList.add('show');
         // });
     }
-    else if([JSON.stringify(op13), JSON.stringify(op14), JSON.stringify(op15), JSON.stringify(op19), JSON.stringify(op20), JSON.stringify(op21), JSON.stringify(op22), JSON.stringify(op23), JSON.stringify(op24)].includes(JSON.stringify(opcionElegida))){
+    else if([JSON.stringify(op11), JSON.stringify(op17), JSON.stringify(op15), JSON.stringify(op19), JSON.stringify(op26), JSON.stringify(op5), JSON.stringify(op23), JSON.stringify(op8)].includes(JSON.stringify(opcionElegida))){
 
         window.open("opcionME.html" , "_self" , "scrollbars=NO")
 
@@ -98,7 +99,7 @@ function consultar(){
         //     modal_container_ME.classList.add('show');
         // });
     }
-    else if([JSON.stringify(op4), JSON.stringify(op5), JSON.stringify(op6), JSON.stringify(op16), JSON.stringify(op17), JSON.stringify(op18)].includes(JSON.stringify(opcionElegida))){
+    else if([JSON.stringify(op4), JSON.stringify(op2), JSON.stringify(op9), JSON.stringify(op14), JSON.stringify(op21), JSON.stringify(op18), JSON.stringify(op24), JSON.stringify(op27)].includes(JSON.stringify(opcionElegida))){
         
         window.open("opcionCA.html" , "_self" , "scrollbars=NO")
 
@@ -107,7 +108,7 @@ function consultar(){
         // });
     }
 
-    else if([JSON.stringify(op1), JSON.stringify(op2), JSON.stringify(op3), JSON.stringify(op10), JSON.stringify(op11), JSON.stringify(op12)].includes(JSON.stringify(opcionElegida))){
+    else if([JSON.stringify(op1), JSON.stringify(op13), JSON.stringify(op3), JSON.stringify(op10), JSON.stringify(op20), JSON.stringify(op12)].includes(JSON.stringify(opcionElegida))){
 
         window.open("opcionSB.html" , "_self" , "scrollbars=NO")
 
